@@ -38,19 +38,7 @@ const values = [
   },
 ];
 
-const milestones = [
-  { year: "2016", event: "OmniPriv founded by security researchers and enterprise architects with backgrounds at CrowdStrike, Palo Alto Networks, and NSA." },
-  { year: "2017", event: "First enterprise customer deployment — a Fortune 500 bank with 50,000 managed assets." },
-  { year: "2018", event: "Achieved SOC 2 Type II and ISO 27001 certifications. Series A funding secured." },
-  { year: "2019", event: "Platform handles 1 million concurrent sessions. Launched JIT access module." },
-  { year: "2020", event: "Series B funding. Launched cloud-native deployment and Kubernetes access management." },
-  { year: "2021", event: "3,000th enterprise customer. Achieved PCI-DSS Level 1 and HIPAA compliance." },
-  { year: "2022", event: "Launched AI-powered anomaly detection. FedRAMP assessment initiated." },
-  { year: "2023", event: "Global expansion to 50+ countries. Launched multi-region high-availability deployment." },
-  { year: "2024", event: "500,000 deployments milestone. Series C funding to accelerate APAC expansion." },
-  { year: "2025", event: "OmniPriv 4.0 launched with ML-driven behavioral analytics and 250+ integrations." },
-  { year: "2026", event: "Recognized as Leader in Gartner Magic Quadrant for Privileged Access Management." },
-];
+
 
 const team = [
   {
@@ -266,36 +254,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Timeline */}
-      <section className="section-padding border-y border-white/[0.04] bg-[#0A1628]/30">
-        <div className="container-xl">
-          <div className="text-center max-w-2xl mx-auto mb-14">
-            <div className="badge-cyan mb-5">Our Journey</div>
-            <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-4" style={{ fontFamily: "var(--font-syne)" }}>
-              A Decade of <span className="text-gradient">Enterprise Security Innovation</span>
-            </h2>
-          </div>
 
-          <div className="relative max-w-3xl mx-auto">
-            <div className="absolute left-[88px] top-0 bottom-0 w-px bg-gradient-to-b from-[#00B8FF]/40 via-[#00B8FF]/20 to-transparent" />
-            <div className="space-y-6">
-              {milestones.map((m) => (
-                <div key={m.year} className="flex gap-6 group">
-                  <div className="w-16 text-right flex-shrink-0">
-                    <span className="text-sm font-bold text-[#00B8FF]" style={{ fontFamily: "var(--font-syne)" }}>{m.year}</span>
-                  </div>
-                  <div className="relative flex-shrink-0 flex items-start justify-center w-4 pt-1">
-                    <div className="w-3 h-3 rounded-full border-2 border-[#00B8FF] bg-[#030711] group-hover:bg-[#00B8FF] transition-colors" />
-                  </div>
-                  <div className="pb-6">
-                    <p className="text-sm text-slate-400 leading-relaxed">{m.event}</p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Investors */}
       <section className="section-padding">
