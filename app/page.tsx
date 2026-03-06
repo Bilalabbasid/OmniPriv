@@ -347,7 +347,7 @@ export default function HomePage() {
         <div className="absolute top-2/3 right-[20%] w-1 h-1 rounded-full bg-[#00B8FF]/40 animate-pulse" style={{ animationDelay: "1.2s" }} />
         <div className="absolute top-1/2 right-[35%] w-1 h-1 rounded-full bg-sky-400/30 animate-pulse" style={{ animationDelay: "2.4s" }} />
 
-        <div className="container-xl relative z-10 py-24">
+        <div className="container-xl relative z-10 py-24 pb-64 md:pb-72">
           <div className="max-w-4xl mx-auto text-center">
             {/* Badge */}
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00B8FF]/25 bg-[#00B8FF]/[0.08] mb-8">
@@ -391,7 +391,7 @@ export default function HomePage() {
             </div>
 
             {/* Protocol tags */}
-            <div className="flex flex-wrap justify-center gap-2">
+            <div className="flex flex-wrap justify-center gap-2 mb-8">
               {protocols.map((p) => (
                 <span
                   key={p.name}
@@ -427,7 +427,7 @@ export default function HomePage() {
               </div>
             </div>
             {/* Fake dashboard content */}
-            <div className="p-6 grid grid-cols-4 gap-4">
+            <div className="p-4 md:p-6 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4">
               {[
                 { label: "Active Sessions", value: "42", color: "text-[#00B8FF]" },
                 { label: "Assets Monitored", value: "8,291", color: "text-emerald-400" },
