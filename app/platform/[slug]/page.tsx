@@ -45,11 +45,11 @@ export default async function SolutionPage({
                 <div className="container-xl relative z-10">
                     {/* Breadcrumb */}
                     <Link
-                        href="/solutions"
+                        href="/platform"
                         className="inline-flex items-center gap-1.5 text-sm text-slate-500 hover:text-[#00B8FF] transition-colors mb-8"
                     >
                         <ArrowLeft className="w-3.5 h-3.5" />
-                        All Solutions
+                        All Capabilities
                     </Link>
 
                     <div className="max-w-3xl">
@@ -132,8 +132,8 @@ export default async function SolutionPage({
                                 <Link href="/demo" className="btn-primary text-base px-8 py-3.5">
                                     Request a Demo <ArrowRight className="w-5 h-5" />
                                 </Link>
-                                <Link href="/solutions" className="btn-secondary text-base px-8 py-3.5">
-                                    Explore All Solutions
+                                <Link href="/platform" className="btn-secondary text-base px-8 py-3.5">
+                                    Explore All Capabilities
                                 </Link>
                             </div>
                         </div>

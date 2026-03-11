@@ -5,22 +5,13 @@ import Image from "next/image";
 import { Mail, Phone, MapPin, Linkedin, Twitter, Youtube, ArrowRight } from "lucide-react";
 
 const productLinks = [
-  { label: "Authentication & MFA", href: "/features#authentication" },
-  { label: "Authorization & RBAC", href: "/features#authorization" },
-  { label: "Account Management", href: "/features#account" },
-  { label: "Session Auditing", href: "/features#audit" },
-  { label: "Credential Vault", href: "/features#vault" },
-  { label: "Just-In-Time Access", href: "/features#jit" },
-  { label: "Integrations", href: "/integrations" },
-];
-
-const solutionLinks = [
-  { label: "Financial Services", href: "/solutions#finance" },
-  { label: "Healthcare", href: "/solutions#healthcare" },
-  { label: "Manufacturing & OT", href: "/solutions#manufacturing" },
-  { label: "Technology & DevOps", href: "/solutions#technology" },
-  { label: "Government", href: "/solutions#government" },
-  { label: "Global Enterprise", href: "/solutions#enterprise" },
+  { label: "Infrastructure Deployment", href: "/platform/infrastructure-deployment" },
+  { label: "Credential Management", href: "/platform/password-credential-management" },
+  { label: "Application Security", href: "/platform/application-security" },
+  { label: "Session Management", href: "/platform/session-management" },
+  { label: "Enterprise Integration", href: "/platform/enterprise-integration" },
+  { label: "Compliance & Audit", href: "/platform/audit-compliance" },
+  { label: "Threat Detection", href: "/platform/threat-detection" },
 ];
 
 const resourceLinks = [
@@ -141,7 +132,7 @@ export default function Footer() {
           {/* Products */}
           <div>
             <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
-              Platform
+              Capabilities
             </h4>
             <ul className="space-y-3">
               {productLinks.map((link) => (
@@ -158,25 +149,7 @@ export default function Footer() {
             </ul>
           </div>
 
-          {/* Solutions */}
-          <div>
-            <h4 className="text-white font-semibold text-sm mb-4 uppercase tracking-wider">
-              Solutions
-            </h4>
-            <ul className="space-y-3">
-              {solutionLinks.map((link) => (
-                <li key={link.label}>
-                  <Link
-                    href={link.href}
-                    className="text-sm text-slate-400 hover:text-[#00B8FF] transition-colors duration-200 flex items-center gap-1.5 group/link"
-                  >
-                    <span className="w-1 h-1 rounded-full bg-[#00B8FF]/30 group-hover/link:bg-[#00B8FF] transition-colors flex-shrink-0" />
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+
 
           {/* Resources */}
           <div>

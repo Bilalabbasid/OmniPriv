@@ -40,7 +40,7 @@ OmniPriv is a **premium, enterprise-grade Privileged Access Management (PAM)** s
 ```
 / ...................... Homepage
 /features ............. Product Features (4 Pillars)
-/solutions ............ Solutions by Industry & Use Case
+/platform ............ Platform Capabilities & Features
 /enterprise ........... Enterprise Plans (Contact for Pricing)
 /security ............. Security & Compliance Center
 /integrations ......... Integrations & Ecosystem
@@ -84,7 +84,7 @@ OmniPriv is a **premium, enterprise-grade Privileged Access Management (PAM)** s
 - Audit & Compliance deep-dive
 - Feature comparison table
 
-### Solutions (`/solutions`)
+### Platform (`/platform`)
 - By Industry: Finance, Healthcare, Manufacturing, Technology, Government
 - By Use Case: Remote Access Security, Cloud & Multi-Cloud, DevOps Security, Compliance & Audit
 

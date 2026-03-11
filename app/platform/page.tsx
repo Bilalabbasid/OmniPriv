@@ -4,7 +4,7 @@ import { ArrowRight } from "lucide-react";
 import { solutions } from "./data";
 
 export const metadata: Metadata = {
-  title: "Solutions — Enterprise PAM Capabilities",
+  title: "Platform — Enterprise PAM Capabilities",
   description:
     "Explore OmniPriv's 8 core PAM capabilities: infrastructure deployment, credential management, application security, enterprise integration, session management, workflow access control, audit compliance, and threat detection.",
 };
@@ -22,7 +22,7 @@ export default function SolutionsPage() {
             className="text-5xl md:text-6xl font-extrabold text-white mb-6 max-w-4xl mx-auto"
             style={{ fontFamily: "var(--font-syne)" }}
           >
-            Enterprise-Grade <span className="text-gradient">PAM Solutions</span>
+            Enterprise-Grade <span className="text-gradient">PAM Platform</span>
           </h1>
           <p className="text-xl text-slate-400 max-w-2xl mx-auto mb-10">
             From infrastructure deployment to threat detection — OmniPriv covers every dimension of
@@ -55,7 +55,7 @@ export default function SolutionsPage() {
             {solutions.map((solution) => (
               <Link
                 key={solution.slug}
-                href={`/solutions/${solution.slug}`}
+                href={`/platform/${solution.slug}`}
                 className="group p-6 rounded-2xl border border-white/[0.06] bg-[#0A1628]/60 hover:border-[#00B8FF]/25 hover:bg-[#0A1628]/80 transition-all duration-300 card-shine flex flex-col"
               >
                 <div className="icon-wrapper w-12 h-12 rounded-xl mb-5 group-hover:scale-110 transition-transform duration-300">
