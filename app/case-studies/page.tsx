@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { ArrowRight, TrendingDown, Clock, ShieldCheck, ChevronRight } from "lucide-react";
+import { ArrowRight, TrendingDown, Clock, ShieldCheck } from "lucide-react";
 
 export const metadata: Metadata = {
   title: "Case Studies: Real Results from Real Enterprises",
@@ -213,11 +213,8 @@ export default function CaseStudiesPage() {
 
                 <div className="text-sm font-semibold text-[#00B8FF] mb-2">{c.metric}</div>
                 <div className="text-xs font-medium text-slate-300 mb-3">{c.highlight}</div>
-                <p className="text-xs text-slate-500 leading-relaxed flex-1 mb-4">{c.desc}</p>
+                <p className="text-xs text-slate-500 leading-relaxed flex-1">{c.desc}</p>
 
-                <div className="flex items-center gap-1 text-xs text-slate-500 group-hover:text-[#00B8FF] transition-colors border-t border-white/[0.04] pt-4">
-                  Read Case Study <ChevronRight className="w-3 h-3 ml-1" />
-                </div>
               </div>
             ))}
           </div>
