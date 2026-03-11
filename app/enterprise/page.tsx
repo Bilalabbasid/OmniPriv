@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import {
-  ArrowRight, CheckCircle2, Shield, Zap, Users, Clock, Phone,
+  ArrowRight, CheckCircle2, Shield, Zap, Users, Clock,
   Building2, Globe, Server, BarChart3, Headphones, Award, Star, Lock,
 } from "lucide-react";
 
@@ -347,9 +347,7 @@ export default function EnterprisePage() {
                   <Link href="/demo" className="btn-primary">
                     Schedule a Call <ArrowRight className="w-4 h-4" />
                   </Link>
-                  <a href="tel:+18005550199" className="btn-secondary flex items-center gap-2">
-                    <Phone className="w-4 h-4" /> Call Sales
-                  </a>
+
                 </div>
               </div>
               <div className="space-y-4">

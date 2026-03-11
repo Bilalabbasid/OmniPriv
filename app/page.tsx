@@ -362,7 +362,7 @@ export default function HomePage() {
             <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-[#00B8FF]/25 bg-[#00B8FF]/[0.08] mb-8">
               <span className="w-1.5 h-1.5 rounded-full bg-[#00B8FF] animate-pulse" />
               <span className="text-[#00B8FF] text-xs font-semibold uppercase tracking-wider">
-                Enterprise PAM Platform — v4.0 Now Available
+                Enterprise PAM Platform
               </span>
             </div>
 
@@ -385,7 +385,6 @@ export default function HomePage() {
             <p className="text-lg sm:text-xl text-slate-400 leading-relaxed mb-10 max-w-2xl mx-auto">
               OmniPriv secures your most critical systems with comprehensive privileged access controls,
               automated credential management, full session auditing, and real-time threat detection.
-              Trusted by 100+ enterprises worldwide.
             </p>
 
             {/* CTAs */}

@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, MapPin, Linkedin, Twitter, Youtube, ArrowRight } from "lucide-react";
+import { Mail, MapPin, ArrowRight } from "lucide-react";
 import { useState } from "react";
 
 const productLinks = [
@@ -16,11 +16,9 @@ const productLinks = [
 ];
 
 const resourceLinks = [
-  { label: "Documentation", href: "/docs" },
   { label: "Blog & Insights", href: "/blog" },
   { label: "Case Studies", href: "/case-studies" },
   { label: "Security Center", href: "/security" },
-  { label: "API Reference", href: "/docs#api" },
 ];
 
 const companyLinks = [
@@ -100,26 +98,6 @@ export default function Footer() {
             <p className="text-slate-400 text-sm leading-relaxed mb-6 max-w-xs">
               Enterprise Privileged Access Management. Secure, audit, and control every privileged session across your hybrid infrastructure.
             </p>
-
-            {/* Social links */}
-            <div className="flex items-center gap-3 mb-8">
-              {[
-                { Icon: Linkedin, href: "#", label: "LinkedIn" },
-                { Icon: Twitter, href: "#", label: "Twitter" },
-                { Icon: Youtube, href: "#", label: "YouTube" },
-              ].map(({ Icon, href, label }) => (
-                <a
-                  key={label}
-                  href={href}
-                  aria-label={label}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-9 h-9 rounded-lg border border-white/[0.08] hover:border-[#00B8FF]/40 flex items-center justify-center text-slate-400 hover:text-[#00B8FF] transition-all duration-200 hover:bg-[#00B8FF]/[0.08]"
-                >
-                  <Icon className="w-4 h-4" />
-                </a>
-              ))}
-            </div>
 
             {/* Contact info */}
             <div className="space-y-4">

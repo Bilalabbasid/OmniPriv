@@ -134,10 +134,10 @@ export default function DocsPage() {
         <div className="container-xl">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
             {quickLinks.map((link) => (
-              
-
+              <Link key={link.label} href={link.href} className="flex items-center gap-2 p-3 rounded-xl border border-white/[0.06] hover:border-[#00B8FF]/20 transition-all group">
+                <link.icon className="w-4 h-4 text-[#00B8FF] flex-shrink-0" />
                 <span className="text-sm font-medium text-slate-300 group-hover:text-white transition-colors">{link.label}</span>
-              
+              </Link>
             ))}
           </div>
         </div>

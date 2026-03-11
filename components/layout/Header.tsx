@@ -15,7 +15,6 @@ import {
   UserCheck,
   Building2,
   Globe,
-  FileText,
   BookOpen,
   Users,
   Zap,
@@ -76,7 +75,6 @@ const platformLinks = [
 ];
 
 const resourceLinks = [
-  { label: "Documentation", href: "/docs", icon: FileText },
   { label: "Blog", href: "/blog", icon: BookOpen },
   { label: "Case Studies", href: "/case-studies", icon: Users },
 ];
