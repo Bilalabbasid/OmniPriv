@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import {
@@ -21,6 +21,7 @@ import {
   Zap,
   BarChart3,
   AlertTriangle,
+  Download,
 } from "lucide-react";
 
 const platformLinks = [
@@ -85,6 +86,18 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileProduct, setMobileProduct] = useState(false);
   const [mobileResource, setMobileResource] = useState(false);
+  const [resourceOpen, setResourceOpen] = useState(false);
+  const resourceRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (resourceRef.current && !resourceRef.current.contains(e.target as Node)) {
+        setResourceOpen(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, []);
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 20);
@@ -170,25 +183,45 @@ export default function Header() {
 
 
             {/* Resources Dropdown */}
-            <div className="nav-item relative group">
-              <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.05] transition-all duration-200">
+            <div className="relative" ref={resourceRef}>
+              <button
+                onClick={() => setResourceOpen((o) => !o)}
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.05] transition-all duration-200"
+              >
                 Resources
-                <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${resourceOpen ? "rotate-180" : ""}`} />
               </button>
-              <div className="nav-dropdown absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[240px] p-2 bg-[#0A1628]/95 backdrop-blur-xl border border-white/[0.07] rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
-                {resourceLinks.map((item) => (
-                  <Link
-                    key={item.label}
-                    href={item.href}
+              {resourceOpen && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[240px] p-2 bg-[#0A1628]/95 backdrop-blur-xl border border-white/[0.07] rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] z-50">
+                  {resourceLinks.map((item) => (
+                    <Link
+                      key={item.label}
+                      href={item.href}
+                      onClick={() => setResourceOpen(false)}
+                      className="flex items-center gap-3 p-3 rounded-xl hover:bg-[#00B8FF]/[0.08] transition-all duration-200"
+                    >
+                      <div className="w-8 h-8 rounded-lg bg-[#00B8FF]/10 border border-[#00B8FF]/15 flex items-center justify-center flex-shrink-0">
+                        <item.icon className="w-3.5 h-3.5 text-[#00B8FF]" />
+                      </div>
+                      <span className="text-sm font-medium text-white">{item.label}</span>
+                    </Link>
+                  ))}
+                  <a
+                    href="/OmniPriv_PAM_datasheet.pdf"
+                    download
+                    onClick={() => setResourceOpen(false)}
                     className="flex items-center gap-3 p-3 rounded-xl hover:bg-[#00B8FF]/[0.08] transition-all duration-200"
                   >
                     <div className="w-8 h-8 rounded-lg bg-[#00B8FF]/10 border border-[#00B8FF]/15 flex items-center justify-center flex-shrink-0">
-                      <item.icon className="w-3.5 h-3.5 text-[#00B8FF]" />
+                      <Download className="w-3.5 h-3.5 text-[#00B8FF]" />
                     </div>
-                    <span className="text-sm font-medium text-white">{item.label}</span>
-                  </Link>
-                ))}
-              </div>
+                    <div className="text-left">
+                      <span className="text-sm font-medium text-white block">Data Sheet</span>
+                      <span className="text-[11px] text-slate-500">Download PDF</span>
+                    </div>
+                  </a>
+                </div>
+              )}
             </div>
 
             <Link
@@ -282,6 +315,16 @@ export default function Header() {
                     {item.label}
                   </Link>
                 ))}
+                <a
+                  href="/OmniPriv_PAM_datasheet.pdf"
+                  download
+                  onClick={() => setMobileOpen(false)}
+                  className="flex items-center gap-3 px-4 py-2.5 text-sm text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.04] transition-all"
+                >
+                  <Download className="w-4 h-4 text-[#00B8FF]" />
+                  <span>Data Sheet</span>
+                  <span className="ml-auto text-[10px] text-slate-600">PDF</span>
+                </a>
               </div>
             )}
 

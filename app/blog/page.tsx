@@ -140,8 +140,13 @@ function getTagColor(tag: string) {
 }
 
 export default function BlogPage() {
+  const [activeCategory, setActiveCategory] = useState("All");
   const [newsletterEmail, setNewsletterEmail] = useState("");
   const [newsletterStatus, setNewsletterStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const filteredPosts = activeCategory === "All"
+    ? posts
+    : posts.filter((p) => p.category === activeCategory);
 
   async function handleNewsletter(e: React.FormEvent) {
     e.preventDefault();
@@ -184,8 +189,9 @@ export default function BlogPage() {
             {categories.map((cat) => (
               <button
                 key={cat}
+                onClick={() => setActiveCategory(cat)}
                 className={`flex-shrink-0 px-4 py-1.5 rounded-full text-sm font-medium transition-all border ${
-                  cat === "All"
+                  cat === activeCategory
                     ? "bg-[#00B8FF]/15 border-[#00B8FF]/30 text-[#00B8FF]"
                     : "bg-transparent border-white/[0.06] text-slate-400 hover:border-[#00B8FF]/20 hover:text-white"
                 }`}
@@ -251,7 +257,7 @@ export default function BlogPage() {
       <section className="pb-20">
         <div className="container-xl">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {posts.map((post) => (
+            {filteredPosts.map((post) => (
               <Link
                 key={post.title}
                 href={post.href}
