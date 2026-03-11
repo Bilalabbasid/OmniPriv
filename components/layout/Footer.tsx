@@ -205,12 +205,12 @@ export default function Footer() {
               Talk to our PAM experts and get a personalized demo.
             </p>
           </div>
-          <a
-            href="mailto:info@omnipriv.com"
+          <Link
+            href="/demo"
             className="btn-primary whitespace-nowrap flex-shrink-0"
           >
             Contact Sales <ArrowRight className="w-4 h-4" />
-          </a>
+          </Link>
         </div>
       </div>
 

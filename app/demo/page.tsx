@@ -67,13 +67,13 @@ export default function DemoPage() {
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
-    workEmail: "",
+    email: "",
     phone: "",
     company: "",
     jobTitle: "",
     companySize: "",
     useCase: "",
-    message: "",
+    context: "",
     agree: false,
   });
   const [submitted, setSubmitted] = useState(false);
@@ -95,14 +95,15 @@ export default function DemoPage() {
         EMAILJS_SERVICE_ID,
         EMAILJS_DEMO_TEMPLATE_ID,
         {
-          from_name: `${formData.firstName} ${formData.lastName}`.trim(),
-          from_email: formData.workEmail,
+          firstName: formData.firstName,
+          lastName: formData.lastName,
+          email: formData.email,
           phone: formData.phone,
+          jobTitle: formData.jobTitle,
           company: formData.company,
-          job_title: formData.jobTitle,
-          company_size: formData.companySize,
-          use_case: formData.useCase,
-          message: formData.message || "No additional context provided.",
+          companySize: formData.companySize,
+          useCase: formData.useCase,
+          context: formData.context || "No additional context provided.",
         },
         EMAILJS_PUBLIC_KEY,
       );
@@ -189,8 +190,8 @@ export default function DemoPage() {
                       <input
                         required
                         type="email"
-                        name="workEmail"
-                        value={formData.workEmail}
+                        name="email"
+                        value={formData.email}
                         onChange={handleChange}
                         placeholder="you@company.com"
                         className="input-dark"
@@ -273,8 +274,8 @@ export default function DemoPage() {
                       <label className="block text-sm font-medium text-slate-300 mb-1.5">Additional Context</label>
                       <textarea
                         rows={4}
-                        name="message"
-                        value={formData.message}
+                        name="context"
+                        value={formData.context}
                         onChange={handleChange}
                         placeholder="Describe your current environment, key challenges, timeline, or anything else we should know to make the demo as relevant as possible."
                         className="input-dark resize-none"
@@ -373,9 +374,9 @@ export default function DemoPage() {
               <div className="p-6 rounded-2xl border border-white/[0.06] bg-[#0A1628]/60">
                 <h3 className="text-sm font-bold text-white mb-4" style={{ fontFamily: "var(--font-syne)" }}>Prefer to Talk Directly?</h3>
                 <div className="space-y-3">
-                  <a href="mailto:sales@OmniPriv.com" className="flex items-center gap-3 text-sm text-slate-400 hover:text-[#00B8FF] transition-colors">
+                  <a href="mailto:info@omnipriv.com" className="flex items-center gap-3 text-sm text-slate-400 hover:text-[#00B8FF] transition-colors">
                     <Mail className="w-4 h-4 text-[#00B8FF]" />
-                    sales@OmniPriv.com
+                    info@omnipriv.com
                   </a>
                   <a href="tel:+18005550199" className="flex items-center gap-3 text-sm text-slate-400 hover:text-[#00B8FF] transition-colors">
                     <Phone className="w-4 h-4 text-[#00B8FF]" />

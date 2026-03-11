@@ -10,17 +10,17 @@
  * Replace the placeholder strings below with your real values.
  */
 
-export const EMAILJS_PUBLIC_KEY = "YOUR_PUBLIC_KEY";
+export const EMAILJS_PUBLIC_KEY = "yvq-HLHV4_jF259wl";
 
-export const EMAILJS_SERVICE_ID = "YOUR_SERVICE_ID";
+export const EMAILJS_SERVICE_ID = "service_9am074m";
 
 /**
  * Template for the demo request form (/demo)
  * Suggested template variables:
- *   {{from_name}}, {{from_email}}, {{phone}}, {{company}},
- *   {{job_title}}, {{company_size}}, {{use_case}}, {{message}}
+ *   {{firstName}}, {{lastName}}, {{email}}, {{phone}},
+ *   {{jobTitle}}, {{company}}, {{companySize}}, {{useCase}}, {{context}}
  */
-export const EMAILJS_DEMO_TEMPLATE_ID = "YOUR_DEMO_TEMPLATE_ID";
+export const EMAILJS_DEMO_TEMPLATE_ID = "template_8pcimf8";
 
 /**
  * Template for the newsletter subscription (/blog)

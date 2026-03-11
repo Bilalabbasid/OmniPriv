@@ -799,9 +799,9 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
               <Link href="/demo" className="btn-primary text-sm">
                 Request a Demo <ArrowRight className="w-4 h-4" />
               </Link>
-              <a href="mailto:info@omnipriv.com" className="btn-secondary text-sm">
+              <Link href="/demo" className="btn-secondary text-sm">
                 Contact Sales
-              </a>
+              </Link>
             </div>
           </div>
 

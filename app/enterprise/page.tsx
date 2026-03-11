@@ -168,9 +168,9 @@ export default function EnterprisePage() {
             <Link href="/demo" className="btn-primary text-base px-8 py-3.5">
               Talk to Sales <ArrowRight className="w-5 h-5" />
             </Link>
-            <a href="mailto:sales@OmniPriv.com" className="btn-secondary text-base px-8 py-3.5">
+            <Link href="/demo" className="btn-secondary text-base px-8 py-3.5">
               Contact Sales
-            </a>
+            </Link>
           </div>
         </div>
       </section>
@@ -254,7 +254,7 @@ export default function EnterprisePage() {
 
           <p className="text-center text-sm text-slate-500 mt-6">
             All prices are quoted annually. Multi-year discounts available.{" "}
-            <a href="mailto:sales@OmniPriv.com" className="text-[#00B8FF] hover:underline">Contact sales</a> for volume licensing.
+            <Link href="/demo" className="text-[#00B8FF] hover:underline">Contact sales</Link> for volume licensing.
           </p>
         </div>
       </section>

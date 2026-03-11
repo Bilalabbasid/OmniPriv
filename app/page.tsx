@@ -28,9 +28,7 @@ import {
   BarChart3,
   Workflow,
   ShieldCheck,
-  Zap,
   Users,
-  Activity,
 } from "lucide-react";
 
 export const metadata: Metadata = {
@@ -40,13 +38,6 @@ export const metadata: Metadata = {
 };
 
 /* ─── Data ─────────────────────────────────── */
-
-const stats = [
-  { value: "500+", label: "Global Deployments", icon: Globe },
-  { value: "100+", label: "Partners", icon: Building2 },
-  { value: "99.99%", label: "Platform Uptime SLA", icon: Activity },
-  { value: "250+", label: "Integrations", icon: Zap },
-];
 
 const trustedBrands = [
   "Microsoft", "Siemens", "Tencent", "Ford", "Deloitte",
@@ -425,25 +416,6 @@ export default function HomePage() {
         <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-[#00B8FF]/30 to-transparent" />
       </section>
 
-      {/* ─── STATS ─────────────────────────────── */}
-      <section className="relative py-20 border-y border-white/[0.05]" style={{ background: "linear-gradient(180deg, #0A1628 0%, #060d1f 100%)" }}>
-        <div className="container-xl">
-          <div className="grid grid-cols-2 md:grid-cols-4 divide-x divide-y md:divide-y-0 divide-white/[0.05] rounded-2xl overflow-hidden border border-white/[0.05]">
-            {stats.map((stat, i) => (
-              <div key={stat.label} className="text-center group px-8 py-10 hover:bg-white/[0.03] transition-colors relative">
-                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-12 h-[2px] rounded-b-full bg-gradient-to-r from-[#00B8FF]/0 via-[#00B8FF]/60 to-[#00B8FF]/0 group-hover:via-[#00B8FF] transition-all" />
-                <div className="inline-flex items-center justify-center w-11 h-11 rounded-xl mb-5 mx-auto transition-all"
-                  style={{ background: `linear-gradient(135deg, rgba(0,184,255,0.12) 0%, rgba(${i % 2 ? '99,102,241' : '56,189,248'},0.08) 100%)`, border: '1px solid rgba(0,184,255,0.15)' }}>
-                  <stat.icon className="text-[#38bdf8]" style={{ width: "1.125rem", height: "1.125rem" }} />
-                </div>
-                <div className="stat-number mb-1.5">{stat.value}</div>
-                <div className="text-sm text-slate-500 font-medium tracking-wide">{stat.label}</div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
       {/* ─── TECH MARQUEE (SVG logos) ─────────── */}
       <TechMarquee />
 
@@ -581,29 +553,50 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Security Dashboard Mockup */}
-          <div className="mt-14 relative rounded-2xl border border-[#00B8FF]/15 overflow-hidden bg-[#0A1628]/60 group">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#00B8FF]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-            {/* <div className="relative p-4">
-              <Image
-                src="/security-dashboard.png"
-                alt="OmniPriv security monitoring dashboard with session activity, threat maps, and compliance scores"
-                width={1200}
-                height={600}
-                className="w-full h-auto rounded-xl"
-              />
-            </div> */}
-            <div className="px-6 pb-6 text-center">
-              <h3
-                className="text-lg font-bold text-white mb-2"
-                style={{ fontFamily: "var(--font-syne)" }}
-              >
-                Unified Security Command Center
-              </h3>
-              <p className="text-sm text-slate-400 leading-relaxed max-w-2xl mx-auto">
-                Monitor every privileged session, track compliance posture, and respond to threats
-                in real time — all from a single, intuitive dashboard.
-              </p>
+          <div className="mt-14 rounded-2xl border border-[#00B8FF]/15 bg-[#0A1628]/60 overflow-hidden">
+            <div className="grid lg:grid-cols-[1.1fr_1.4fr] gap-0">
+              <div className="p-8 border-b lg:border-b-0 lg:border-r border-white/[0.06]">
+                <div className="badge-cyan mb-4">Live Visibility</div>
+                <h3
+                  className="text-2xl font-extrabold text-white mb-3"
+                  style={{ fontFamily: "var(--font-syne)" }}
+                >
+                  Unified Security Command Center
+                </h3>
+                <p className="text-slate-400 text-sm leading-relaxed">
+                  Give security, infrastructure, and compliance teams one place to review active sessions,
+                  investigate privileged activity, and make access decisions without jumping between tools.
+                </p>
+              </div>
+              <div className="grid sm:grid-cols-3">
+                {[
+                  {
+                    icon: Monitor,
+                    title: "Active Sessions",
+                    text: "See who is connected, where they came from, and what systems are currently in use.",
+                  },
+                  {
+                    icon: ShieldCheck,
+                    title: "Policy Status",
+                    text: "Track approval rules, MFA posture, and policy enforcement across every privileged workflow.",
+                  },
+                  {
+                    icon: BarChart3,
+                    title: "Audit Context",
+                    text: "Surface searchable recordings, commands, and evidence needed for investigations and audits.",
+                  },
+                ].map(({ icon: Icon, title, text }) => (
+                  <div key={title} className="p-6 border-t sm:border-t-0 sm:border-l first:sm:border-l-0 border-white/[0.06]">
+                    <div className="icon-wrapper mb-4">
+                      <Icon className="w-5 h-5" />
+                    </div>
+                    <h4 className="text-white font-semibold mb-2" style={{ fontFamily: "var(--font-syne)" }}>
+                      {title}
+                    </h4>
+                    <p className="text-sm text-slate-400 leading-relaxed">{text}</p>
+                  </div>
+                ))}
+              </div>
             </div>
           </div>
         </div>
@@ -674,29 +667,45 @@ export default function HomePage() {
             </Link>
           </div>
 
-          {/* Zero-Trust Flow Diagram */}
-          <div className="mt-16 relative rounded-2xl border border-[#00B8FF]/15 overflow-hidden bg-[#0A1628]/60 group">
-            <div className="absolute inset-0 bg-gradient-to-br from-[#00B8FF]/[0.03] to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
-            {/* <div className="relative p-4">
-              <Image
-                src="/zero-trust-flow.png"
-                alt="OmniPriv zero-trust privileged access flow — from identity verification through policy check, access grant, to session monitoring"
-                width={1200}
-                height={400}
-                className="w-full h-auto rounded-xl"
-              />
-            </div> */}
-            <div className="px-6 pb-6 text-center">
+          <div className="mt-16 rounded-2xl border border-[#00B8FF]/15 bg-[#0A1628]/60 p-8 md:p-10">
+            <div className="text-center max-w-2xl mx-auto mb-8">
+              <div className="badge-cyan mb-4 inline-flex">Zero-Trust Access Flow</div>
               <h3
-                className="text-lg font-bold text-white mb-2"
+                className="text-2xl font-extrabold text-white mb-3"
                 style={{ fontFamily: "var(--font-syne)" }}
               >
-                Zero-Trust Access Flow
+                Every privileged request is verified, approved, and observed
               </h3>
-              <p className="text-sm text-slate-400 leading-relaxed max-w-2xl mx-auto">
-                Every privileged access request passes through identity verification, policy evaluation, time-limited access granting,
-                and continuous session monitoring — ensuring zero standing privileges.
+              <p className="text-sm text-slate-400 leading-relaxed">
+                OmniPriv replaces standing access with a policy-driven flow that validates identity,
+                grants only the access required, and records the full session from start to finish.
               </p>
+            </div>
+            <div className="grid md:grid-cols-3 gap-4">
+              {[
+                {
+                  step: "Verify",
+                  text: "Authenticate the user, check device and policy context, and enforce MFA before access begins.",
+                },
+                {
+                  step: "Grant",
+                  text: "Issue time-limited access to the exact system, command set, or session window required for the task.",
+                },
+                {
+                  step: "Audit",
+                  text: "Record activity, stream alerts on risky behavior, and retain evidence for compliance and response teams.",
+                },
+              ].map((item, index) => (
+                <div key={item.step} className="rounded-2xl border border-white/[0.06] bg-[#030711]/60 p-6">
+                  <div className="text-xs font-semibold text-[#00B8FF] uppercase tracking-[0.2em] mb-3">
+                    0{index + 1}
+                  </div>
+                  <h4 className="text-lg font-bold text-white mb-2" style={{ fontFamily: "var(--font-syne)" }}>
+                    {item.step}
+                  </h4>
+                  <p className="text-sm text-slate-400 leading-relaxed">{item.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </div>
@@ -925,9 +934,9 @@ export default function HomePage() {
                   Request a Personalized Demo
                   <ArrowRight className="w-5 h-5" />
                 </Link>
-                <a href="mailto:info@omnipriv.com" className="btn-secondary text-base px-10 py-4">
+                <Link href="/demo" className="btn-secondary text-base px-10 py-4">
                   Contact Sales
-                </a>
+                </Link>
               </div>
 
               {/* Trust signals */}

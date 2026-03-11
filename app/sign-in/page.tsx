@@ -140,12 +140,12 @@ export default function SignInPage() {
               <Link href="/demo" className="btn-primary text-sm px-5 py-2.5 rounded-lg">
                 Schedule a Demo <ArrowRight className="w-4 h-4" />
               </Link>
-              <a
-                href="mailto:info@omnipriv.com"
+              <Link
+                href="/demo"
                 className="btn-secondary text-sm px-5 py-2.5 rounded-lg"
               >
                 Contact Sales
-              </a>
+              </Link>
             </div>
           </div>
         </div>
