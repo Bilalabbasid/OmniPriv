@@ -19,6 +19,8 @@ import {
   BookOpen,
   Users,
   Zap,
+  BarChart3,
+  AlertTriangle,
 } from "lucide-react";
 
 const platformLinks = [
@@ -96,6 +98,18 @@ const solutionLinks = [
     description: "Approvals, JIT, policies",
     href: "/solutions/workflow-access-control",
     icon: Globe,
+  },
+  {
+    label: "Audit & Compliance",
+    description: "Regulatory reporting & audit",
+    href: "/solutions/audit-compliance",
+    icon: BarChart3,
+  },
+  {
+    label: "Threat Detection",
+    description: "AI-powered threat response",
+    href: "/solutions/threat-detection",
+    icon: AlertTriangle,
   },
 ];
 
