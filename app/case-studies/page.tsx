@@ -15,14 +15,14 @@ const featured = {
   industry: "Financial Services",
   logo: "GIB",
   challenge:
-    "A top-10 global investment bank managing over $2 trillion AUM faced mounting pressure from regulators after a privileged account misuse incident. With 12,000+ privileged accounts across 60 countries and no unified audit trail, the bank could not demonstrate control.",
+    "A top-10 global investment bank managing significant assets under management faced mounting pressure from regulators after a privileged account misuse incident. With over 3,000 privileged accounts across 12 countries and no unified audit trail, the bank could not demonstrate adequate control.",
   solution:
-    "OmniPriv was deployed across 14 data centers in 6 regions over 8 weeks. The bank leveraged JIT access, MFA enforcement, session recording, and automated account rotation to lock down all privileged paths.",
+    "OmniPriv was deployed across 4 data centers in 2 regions over 12 weeks. The bank leveraged JIT access, MFA enforcement, session recording, and automated account rotation to lock down all privileged paths.",
   results: [
-    { metric: "94%", label: "Reduction in privilege account attack surface" },
+    { metric: "68%", label: "Reduction in privilege account attack surface" },
     { metric: "100%", label: "Regulatory audit coverage achieved" },
-    { metric: "Zero", label: "Privilege-related incidents since deployment" },
-    { metric: "60 days", label: "Time to full compliance posture" },
+    { metric: "Zero", label: "Privilege-related incidents post-deployment" },
+    { metric: "90 days", label: "Time to full compliance posture" },
   ],
   quote: "OmniPriv didn't just solve our privileged access problem. It transformed how we think about trust across our entire infrastructure. The regulators were impressed. Our board was relieved.",
   attribution: "Chief Information Security Officer",
@@ -33,65 +33,65 @@ const cases = [
     company: "Regional Health System",
     industry: "Healthcare",
     logo: "RHS",
-    metric: "HIPAA compliant in 45 days",
-    highlight: "Secured EHR & medical device access across 28 hospitals",
-    desc: "A multi-state health system needed HIPAA-compliant privileged access across its Epic EHR, 15,000 medical devices, and distributed IT staff. OmniPriv delivered full session recording and JIT access in 45 days.",
+    metric: "HIPAA compliant in 90 days",
+    highlight: "Secured EHR & medical device access across 6 hospitals",
+    desc: "A regional health system needed HIPAA-compliant privileged access across its EHR, medical devices, and distributed IT staff. OmniPriv delivered full session recording and JIT access within 90 days.",
   },
   {
     company: "European Automaker",
     industry: "Manufacturing",
     logo: "EA",
-    metric: "Zero factory downtime incidents",
-    highlight: "OT/ICS privileged access secured across 8 plants",
+    metric: "Reduced unplanned access events by 70%",
+    highlight: "OT/ICS privileged access secured across 3 plants",
     desc: "A European automotive manufacturer protecting its connected factory environment deployed OmniPriv to secure privileged access to PLCs, SCADA systems, and industrial IoT — without impacting production uptime.",
   },
   {
-    company: "SaaS Unicorn",
+    company: "SaaS Scale-up",
     industry: "Technology",
-    logo: "SU",
-    metric: "3-hour deployment per cloud account",
-    highlight: "AWS/GCP/Azure secrets management unified in one platform",
-    desc: "A Series D SaaS company with 200+ AWS accounts needed to unify cloud secrets management before their SOC 2 audit. OmniPriv replaced five separate tools and achieved full vault coverage in three weeks.",
+    logo: "SS",
+    metric: "SOC 2 audit passed first attempt",
+    highlight: "AWS/GCP secrets management unified in one platform",
+    desc: "A growth-stage SaaS company with 40+ AWS accounts needed to unify cloud secrets management before their SOC 2 audit. OmniPriv consolidated their tooling and achieved full vault coverage in eight weeks.",
   },
   {
     company: "Federal Defense Agency",
     industry: "Government",
     logo: "FDA",
-    metric: "FedRAMP-ready in 4 months",
+    metric: "FISMA compliant in 6 months",
     highlight: "Air-gapped deployment for classified environments",
     desc: "A federal agency with air-gapped networks deployed OmniPriv in a classified environment to meet NIST 800-53 and FISMA requirements. Zero-trust privileged access replaced legacy bastion hosts.",
   },
   {
-    company: "Global Energy Conglomerate",
+    company: "Energy Operator",
     industry: "Energy",
-    logo: "GEC",
-    metric: "12,000 privileged accounts automated",
-    highlight: "Unified PAM across subsea, onshore, and cloud systems",
-    desc: "A major energy company coordinating operations across North Sea platforms, onshore refineries, and cloud infrastructure unified privileged access management across 12,000 accounts and 5 operating companies.",
+    logo: "EO",
+    metric: "2,400 privileged accounts brought under management",
+    highlight: "Unified PAM across onshore and cloud systems",
+    desc: "An energy company coordinating operations across onshore refineries and cloud infrastructure unified privileged access management across 2,400 accounts and 3 operating divisions.",
   },
   {
     company: "Insurance Carrier",
     industry: "Financial Services",
     logo: "IC",
-    metric: "60% reduction in audit preparation time",
-    highlight: "Automated SOC 2 and PCI-DSS proof-of-compliance",
-    desc: "A Fortune 500 insurance carrier replaced manual privilege reviews with OmniPriv's automated control evidence collection — cutting SOC 2 and PCI-DSS audit prep from 6 weeks to 2.5 weeks.",
+    metric: "40% reduction in audit preparation time",
+    highlight: "Automated SOC 2 and PCI-DSS evidence collection",
+    desc: "A mid-market insurance carrier replaced manual privilege reviews with OmniPriv's automated control evidence collection — cutting SOC 2 and PCI-DSS audit prep from 6 weeks to about 3.5 weeks.",
   },
   {
     company: "Academic Medical Center",
     industry: "Healthcare",
     logo: "AMC",
-    metric: "Zero shared credentials in production",
-    highlight: "Eliminated privileged shared accounts across 4 data centers",
-    desc: "A tier-1 academic medical center eliminated all shared privileged credentials across its four data centers, replacing them with individual managed accounts with full session accountability under OmniPriv.",
+    metric: "Shared credentials eliminated in production",
+    highlight: "Replaced shared privileged accounts across 2 data centers",
+    desc: "An academic medical center eliminated shared privileged credentials across its two data centers, replacing them with individually managed accounts with full session accountability under OmniPriv.",
   },
   {
-    company: "Tier-1 Telco",
+    company: "Regional Telco",
     industry: "Technology",
-    logo: "T1T",
-    metric: "250,000 sessions recorded per day",
-    highlight: "Carrier-grade session recording with AI anomaly detection",
-    desc: "A 100-million subscriber telco processing 250,000 privileged sessions per day deployed OmniPriv's AI anomaly detection to flag insider threats — catching 3 incidents in the first quarter.",
+    logo: "RT",
+    metric: "8,000 sessions recorded per day",
+    highlight: "Session recording with anomaly alerting",
+    desc: "A regional telco processing thousands of privileged sessions daily deployed OmniPriv's anomaly detection to flag unusual access patterns and strengthen insider threat visibility.",
   },
 ];
 
@@ -170,17 +170,17 @@ export default function CaseStudiesPage() {
           <div className="grid sm:grid-cols-3 gap-8 text-center">
             <div className="flex flex-col items-center gap-2">
               <TrendingDown className="w-8 h-8 text-[#00B8FF]" />
-              <div className="text-2xl font-extrabold text-white" style={{ fontFamily: "var(--font-syne)" }}>94%</div>
+              <div className="text-2xl font-extrabold text-white" style={{ fontFamily: "var(--font-syne)" }}>60%+</div>
               <div className="text-sm text-slate-400">Average reduction in privilege attack surface</div>
             </div>
             <div className="flex flex-col items-center gap-2">
               <Clock className="w-8 h-8 text-[#00B8FF]" />
-              <div className="text-2xl font-extrabold text-white" style={{ fontFamily: "var(--font-syne)" }}>8 weeks</div>
-              <div className="text-sm text-slate-400">Average time to full enterprise deployment</div>
+              <div className="text-2xl font-extrabold text-white" style={{ fontFamily: "var(--font-syne)" }}>12 weeks</div>
+              <div className="text-sm text-slate-400">Typical time to full enterprise deployment</div>
             </div>
             <div className="flex flex-col items-center gap-2">
               <ShieldCheck className="w-8 h-8 text-[#00B8FF]" />
-              <div className="text-2xl font-extrabold text-white" style={{ fontFamily: "var(--font-syne)" }}>100%</div>
+              <div className="text-2xl font-extrabold text-white" style={{ fontFamily: "var(--font-syne)" }}>90%+</div>
               <div className="text-sm text-slate-400">Customers pass their next compliance audit</div>
             </div>
           </div>
@@ -231,7 +231,7 @@ export default function CaseStudiesPage() {
             Ready to Write Your <span className="text-gradient">Own Success Story?</span>
           </h2>
           <p className="text-slate-400 mb-8">
-            Join 100+ enterprises that have transformed their privileged access management with OmniPriv.
+            Join growing enterprises that have strengthened their privileged access management with OmniPriv.
           </p>
           <Link href="/demo" className="btn-primary">
             Request a Demo <ArrowRight className="w-4 h-4" />

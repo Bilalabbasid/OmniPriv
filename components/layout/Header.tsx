@@ -86,11 +86,16 @@ export default function Header() {
   const [mobileOpen, setMobileOpen] = useState(false);
   const [mobileProduct, setMobileProduct] = useState(false);
   const [mobileResource, setMobileResource] = useState(false);
+  const [platformOpen, setPlatformOpen] = useState(false);
   const [resourceOpen, setResourceOpen] = useState(false);
+  const platformRef = useRef<HTMLDivElement>(null);
   const resourceRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
+      if (platformRef.current && !platformRef.current.contains(e.target as Node)) {
+        setPlatformOpen(false);
+      }
       if (resourceRef.current && !resourceRef.current.contains(e.target as Node)) {
         setResourceOpen(false);
       }
@@ -146,38 +151,45 @@ export default function Header() {
               Home
             </Link>
             {/* Platform Dropdown */}
-            <div className="nav-item relative group">
-              <button className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.05] transition-all duration-200">
+            <div className="relative" ref={platformRef}>
+              <button
+                onClick={() => { setPlatformOpen((o) => !o); setResourceOpen(false); }}
+                className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.05] transition-all duration-200"
+              >
                 Platform
-                <ChevronDown className="w-3.5 h-3.5 transition-transform duration-200 group-hover:rotate-180" />
+                <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${platformOpen ? "rotate-180" : ""}`} />
               </button>
-              <div className="nav-dropdown absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[560px] p-2 bg-[#0A1628]/95 backdrop-blur-xl border border-white/[0.07] rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.6)]">
-                <div className="grid grid-cols-2 gap-1">
-                  {platformLinks.map((item) => (
+              {platformOpen && (
+                <div className="absolute top-full left-1/2 -translate-x-1/2 mt-2 w-[560px] p-2 bg-[#0A1628]/95 backdrop-blur-xl border border-white/[0.07] rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.6)] z-50">
+                  <div className="grid grid-cols-2 gap-1">
+                    {platformLinks.map((item) => (
+                      <Link
+                        key={item.label}
+                        href={item.href}
+                        onClick={() => setPlatformOpen(false)}
+                        className="flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B8FF]/[0.08] transition-all duration-200 group/item"
+                      >
+                        <div className="w-9 h-9 rounded-lg bg-[#00B8FF]/10 border border-[#00B8FF]/15 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-[#00B8FF]/20 transition-colors">
+                          <item.icon className="w-4 h-4 text-[#00B8FF]" />
+                        </div>
+                        <div>
+                          <div className="text-sm font-semibold text-white mb-0.5">{item.label}</div>
+                          <div className="text-xs text-slate-500">{item.description}</div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
+                  <div className="mt-2 pt-2 border-t border-white/[0.05] px-2 text-center">
                     <Link
-                      key={item.label}
-                      href={item.href}
-                      className="flex items-start gap-3 p-3 rounded-xl hover:bg-[#00B8FF]/[0.08] transition-all duration-200 group/item"
+                      href="/platform"
+                      onClick={() => setPlatformOpen(false)}
+                      className="flex items-center justify-center gap-2 text-xs text-[#00B8FF] font-medium hover:underline"
                     >
-                      <div className="w-9 h-9 rounded-lg bg-[#00B8FF]/10 border border-[#00B8FF]/15 flex items-center justify-center flex-shrink-0 mt-0.5 group-hover/item:bg-[#00B8FF]/20 transition-colors">
-                        <item.icon className="w-4 h-4 text-[#00B8FF]" />
-                      </div>
-                      <div>
-                        <div className="text-sm font-semibold text-white mb-0.5">{item.label}</div>
-                        <div className="text-xs text-slate-500">{item.description}</div>
-                      </div>
+                      View all capabilities <ArrowRight className="w-3 h-3" />
                     </Link>
-                  ))}
+                  </div>
                 </div>
-                <div className="mt-2 pt-2 border-t border-white/[0.05] px-2 text-center">
-                  <Link
-                    href="/platform"
-                    className="flex items-center justify-center gap-2 text-xs text-[#00B8FF] font-medium hover:underline"
-                  >
-                    View all capabilities <ArrowRight className="w-3 h-3" />
-                  </Link>
-                </div>
-              </div>
+              )}
             </div>
 
 
@@ -185,7 +197,7 @@ export default function Header() {
             {/* Resources Dropdown */}
             <div className="relative" ref={resourceRef}>
               <button
-                onClick={() => setResourceOpen((o) => !o)}
+                onClick={() => { setResourceOpen((o) => !o); setPlatformOpen(false); }}
                 className="flex items-center gap-1 px-4 py-2 text-sm font-medium text-slate-300 hover:text-white rounded-lg hover:bg-white/[0.05] transition-all duration-200"
               >
                 Resources
