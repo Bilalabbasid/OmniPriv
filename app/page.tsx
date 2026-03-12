@@ -37,7 +37,7 @@ export const metadata: Metadata = {
     "OmniPriv is the enterprise PAM platform trusted by 100+ organizations. Secure every privileged session with bastion host, credential vaulting, MFA, and real-time audit trails.",
 };
 
-/* ─── Data ─────────────────────────────────── */
+
 
 const trustedBrands = [
   "Microsoft", "Siemens", "Tencent", "Ford", "Deloitte",
