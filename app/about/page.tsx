@@ -102,12 +102,7 @@ const investors = [
 const certBadges = [
   "SOC 2 Type II",
   "ISO 27001",
-  "PCI-DSS Level 1",
-  "HIPAA",
   "GDPR",
-  "FedRAMP Ready",
-  "NIST CSF",
-  "FIPS 140-2",
 ];
 
 export default function AboutPage() {
