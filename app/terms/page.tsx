@@ -100,9 +100,9 @@ THESE LIMITATIONS APPLY REGARDLESS OF THE THEORY OF LIABILITY AND DO NOT APPLY T
   {
     id: "indemnification",
     title: "10. Indemnification",
-    content: `**By OmniPriv:** OmniPriv will defend and indemnify you against third-party claims that the Services, as provided by OmniPriv, infringe a third party's intellectual property rights, provided you: (i) give OmniPriv prompt written notice; (ii) give OmniPriv control over the defense; and (iii) cooperate with OmniPriv's defense. OmniPriv's obligation does not apply to claims arising from your modifications or combinations with third-party products.
+    content: `By OmniPriv: OmniPriv will defend and indemnify you against third-party claims that the Services, as provided by OmniPriv, infringe a third party's intellectual property rights, provided you: (i) give OmniPriv prompt written notice; (ii) give OmniPriv control over the defense; and (iii) cooperate with OmniPriv's defense. OmniPriv's obligation does not apply to claims arising from your modifications or combinations with third-party products.
 
-**By You:** You will defend and indemnify OmniPriv against claims arising from: (i) your use of the Services in violation of these Terms; (ii) Customer Data infringing third-party rights; or (iii) your breach of applicable law.`,
+By You: You will defend and indemnify OmniPriv against claims arising from: (i) your use of the Services in violation of these Terms; (ii) Customer Data infringing third-party rights; or (iii) your breach of applicable law.`,
   },
   {
     id: "term",
@@ -125,24 +125,24 @@ Nothing in this section limits OmniPriv's right to seek injunctive or other equi
     title: "13. General Provisions",
     content: `**Entire Agreement:** These Terms, together with any Order Form and the DPA, constitute the entire agreement between the parties regarding the Services and supersede all prior agreements.
 
-**Amendments:** OmniPriv may update these Terms with 30 days' notice. Your continued use after the effective date constitutes acceptance. If you object to changes, your sole remedy is to terminate and receive a pro-rated refund of prepaid unused fees.
+Amendments: OmniPriv may update these Terms with 30 days' notice. Your continued use after the effective date constitutes acceptance. If you object to changes, your sole remedy is to terminate and receive a pro-rated refund of prepaid unused fees.
 
-**Waiver:** Failure to enforce any provision is not a waiver of future enforcement rights.
+Waiver: Failure to enforce any provision is not a waiver of future enforcement rights.
 
-**Severability:** If any provision is found unenforceable, it will be limited to the minimum extent necessary, and the remaining Terms continue in full force.
+Severability: If any provision is found unenforceable, it will be limited to the minimum extent necessary, and the remaining Terms continue in full force.
 
-**Assignment:** You may not assign these Terms without OmniPriv's written consent. OmniPriv may assign these Terms in connection with a merger or acquisition.
+Assignment: You may not assign these Terms without OmniPriv's written consent. OmniPriv may assign these Terms in connection with a merger or acquisition.
 
-**Notices:** Notices to OmniPriv must be sent to legal@OmniPriv.com (for legal matters) or support@OmniPriv.com (for support matters).
+Notices: Notices to OmniPriv must be sent to legal@OmniPriv.com (for legal matters) or support@OmniPriv.com (for support matters).
 
-**Force Majeure:** Neither party will be liable for delays caused by circumstances beyond its reasonable control.`,
+Force Majeure: Neither party will be liable for delays caused by circumstances beyond its reasonable control.`,
   },
   {
     id: "contact",
     title: "14. Contact",
     content: `Questions about these Terms?
 
-**OmniPriv Legal Team**
+OmniPriv Legal Team
 Email: legal@OmniPriv.com
 Address: OmniPriv, Inc., 1 Market Street, Suite 2500, San Francisco, CA 94105, USA`,
   },

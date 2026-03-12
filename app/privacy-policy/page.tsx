@@ -19,18 +19,18 @@ By using our website or services, you agree to the collection and use of informa
     title: "Information We Collect",
     content: `We collect several types of information in connection with our services:
 
-**Information You Provide Directly**
+Information You Provide Directly
 - Contact and account information: name, work email address, phone number, job title, company name, and company size when you fill out forms, request demos, or register for an account.
 - Communications: messages you send us via email, web forms, or support tickets.
 - Payment information: processed by our PCI-DSS compliant payment processors; we do not store raw card data.
 - Usage data: configuration settings, access logs, and session metadata when you use the OmniPriv platform.
 
-**Information Collected Automatically**
+Information Collected Automatically
 - Technical data: IP address, browser type, operating system, referral URL, pages visited, and time spent on pages.
 - Cookies and tracking technologies: session cookies, persistent cookies, and similar technologies (see "Cookies" section below).
 - Usage analytics: aggregated, anonymized data about how users navigate and use our platform, used to improve product quality.
 
-**Information From Third Parties**
+Information From Third Parties
 - Business intelligence providers: publicly available firmographic data (company size, industry) used to personalize outreach.
 - SSO providers: if you authenticate via an identity provider (Okta, Azure AD, etc.), we receive basic profile information permitted by that provider.`,
   },
@@ -39,32 +39,32 @@ By using our website or services, you agree to the collection and use of informa
     title: "How We Use Your Information",
     content: `We use the information we collect to:
 
-- **Provide and improve our services:** Process transactions, maintain accounts, deliver support, and continuously enhance the OmniPriv platform.
-- **Communications:** Send you service notifications, security alerts, product updates, and marketing communications (which you may opt out of at any time).
-- **Sales and marketing:** Personalize outreach from our sales team based on your role, company, and expressed interests.
-- **Security and fraud prevention:** Monitor for unauthorized access, investigate incidents, and enforce our terms of service.
-- **Compliance and legal obligations:** Retain records required by applicable law, respond to lawful requests from government authorities, and exercise or defend legal claims.
-- **Analytics:** Understand how our website and product are used to improve user experience and prioritize product development.`,
+- Provide and improve our services: Process transactions, maintain accounts, deliver support, and continuously enhance the OmniPriv platform.
+- Communications: Send you service notifications, security alerts, product updates, and marketing communications (which you may opt out of at any time).
+- Sales and marketing: Personalize outreach from our sales team based on your role, company, and expressed interests.
+- Security and fraud prevention: Monitor for unauthorized access, investigate incidents, and enforce our terms of service.
+- Compliance and legal obligations: Retain records required by applicable law, respond to lawful requests from government authorities, and exercise or defend legal claims.
+- Analytics: Understand how our website and product are used to improve user experience and prioritize product development.`,
   },
   {
     id: "legal-bases",
     title: "Legal Bases for Processing (GDPR)",
     content: `If you are in the European Economic Area (EEA) or United Kingdom, we process your personal data under the following legal bases:
 
-- **Contract performance:** When processing is necessary to fulfill a contract with you (e.g., delivering subscribed services).
-- **Legitimate interests:** When we have a legitimate business interest that does not override your rights (e.g., fraud prevention, marketing to existing customers, product analytics).
-- **Consent:** When you have given explicit consent (e.g., subscribing to marketing emails). You may withdraw consent at any time.
-- **Legal obligation:** When processing is required to comply with applicable law.`,
+- Contract performance: When processing is necessary to fulfill a contract with you (e.g., delivering subscribed services).
+- Legitimate interests: When we have a legitimate business interest that does not override your rights (e.g., fraud prevention, marketing to existing customers, product analytics).
+- Consent: When you have given explicit consent (e.g., subscribing to marketing emails). You may withdraw consent at any time.
+- Legal obligation: When processing is required to comply with applicable law.`,
   },
   {
     id: "sharing",
     title: "How We Share Your Information",
     content: `We do not sell your personal information. We share your information only in the following circumstances:
 
-- **Service providers:** Trusted vendors who perform services on our behalf (cloud hosting, payment processing, email delivery, analytics) under contractual data processing agreements.
-- **Business transfers:** In connection with a merger, acquisition, or sale of assets, in which case we will notify you and your information will remain subject to this Privacy Policy.
-- **Legal requirements:** When required by law, court order, or government authority; when necessary to protect OmniPriv's rights; or to prevent fraud or criminal activity.
-- **With your consent:** When you have explicitly authorized us to share your information with a third party.
+- Service providers: Trusted vendors who perform services on our behalf (cloud hosting, payment processing, email delivery, analytics) under contractual data processing agreements.
+- Business transfers: In connection with a merger, acquisition, or sale of assets, in which case we will notify you and your information will remain subject to this Privacy Policy.
+- Legal requirements: When required by law, court order, or government authority; when necessary to protect OmniPriv's rights; or to prevent fraud or criminal activity.
+- With your consent: When you have explicitly authorized us to share your information with a third party.
 
 All third-party service providers are evaluated for security practices and contractually obligated to protect your data.`,
   },
@@ -73,10 +73,10 @@ All third-party service providers are evaluated for security practices and contr
     title: "Data Retention",
     content: `We retain your personal information for as long as necessary to provide our services, fulfill the purposes described in this Privacy Policy, and meet our legal obligations. Specific retention periods:
 
-- **Account data:** Retained for the duration of your contract and up to 5 years afterward for legal purposes.
-- **Session logs and audit records:** Retained for the period required by your applicable compliance framework (typically 1–7 years), configurable per your deployment.
-- **Marketing data:** Retained until you opt out or request deletion.
-- **Cookie data:** See cookie-specific retention in our Cookie Policy.
+- Account data: Retained for the duration of your contract and up to 5 years afterward for legal purposes.
+- Session logs and audit records: Retained for the period required by your applicable compliance framework (typically 1–7 years), configurable per your deployment.
+- Marketing data: Retained until you opt out or request deletion.
+- Cookie data: See cookie-specific retention in our Cookie Policy.
 
 When data is no longer needed, we securely delete or anonymize it.`,
   },
@@ -110,13 +110,13 @@ You can control cookies through your browser settings or opt out of analytics tr
     title: "Your Rights and Choices",
     content: `Depending on your location, you may have the following rights regarding your personal data:
 
-- **Access:** Request a copy of the personal data we hold about you.
-- **Rectification:** Correct inaccurate or incomplete information.
-- **Erasure ("right to be forgotten"):** Request deletion of your personal data, subject to legal retention requirements.
-- **Portability:** Receive your data in a structured, machine-readable format.
-- **Restriction:** Request that we limit how we process your data.
-- **Objection:** Object to processing based on legitimate interests, including direct marketing.
-- **Withdraw consent:** Withdraw consent at any time without affecting prior lawful processing.
+- Access: Request a copy of the personal data we hold about you.
+- Rectification: Correct inaccurate or incomplete information.
+- Erasure ("right to be forgotten"): Request deletion of your personal data, subject to legal retention requirements.
+- Portability: Receive your data in a structured, machine-readable format.
+- Restriction: Request that we limit how we process your data.
+- Objection: Object to processing based on legitimate interests, including direct marketing.
+- Withdraw consent: Withdraw consent at any time without affecting prior lawful processing.
 
 To exercise any right, email privacy@OmniPriv.com. We respond to all requests within 30 days (or as required by applicable law). We may need to verify your identity before fulfilling requests.`,
   },
@@ -140,7 +140,7 @@ To exercise any right, email privacy@OmniPriv.com. We respond to all requests wi
     title: "Contact Us",
     content: `For privacy inquiries, data requests, or to report a concern:
 
-**OmniPriv Privacy Team**
+OmniPriv Privacy Team
 Email: privacy@OmniPriv.com
 Address: OmniPriv, Inc., 1 Market Street, Suite 2500, San Francisco, CA 94105, USA
 
