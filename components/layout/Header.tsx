@@ -80,7 +80,7 @@ const resourceLinks = [
 ];
 
 const datasheetFiles: { url: string; downloadName: string }[] = [
-  { url: "/OmniPriv_PAM_Datasheet.pdf", downloadName: "OmniPriv PAM Datasheet.pdf" },
+  { url: "/OmniPriv_PAM_datasheet.pdf", downloadName: "OmniPriv PAM Datasheet.pdf" },
   { url: "/OmniPriv_PAM_Product_Specification.pdf", downloadName: "OmniPriv PAM Product Specification.pdf" },
 ];
 
