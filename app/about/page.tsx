@@ -226,7 +226,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {/* <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {team.map((member) => (
               <div key={member.name} className="p-7 rounded-2xl border border-white/[0.06] bg-[#0A1628]/60 hover:border-[#00B8FF]/20 transition-all group card-shine">
                 <div className="flex items-start gap-4 mb-4">
@@ -241,7 +241,7 @@ export default function AboutPage() {
                 <p className="text-sm text-slate-400 leading-relaxed">{member.bio}</p>
               </div>
             ))}
-          </div>
+          </div> */}
         </div>
       </section>
 
