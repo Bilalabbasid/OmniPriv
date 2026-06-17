@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 480" width="820" height="480">
+  <defs>
+    <linearGradient id="bg-feat2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#030711"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="480" fill="url(#bg-feat2)" rx="14"/>
+
+  <text x="410" y="36" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff">Key Features of the Best PAM Solutions for Enterprises</text>
+  <text x="410" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#64748b">best PAM solutions for enterprises 2026 — privileged access management capabilities</text>
+
+  <!-- Row 1: 4 features -->
+  <!-- 1. Credential Mgmt -->
+  <rect x="40" y="76" width="175" height="120" rx="12" fill="#0d1f35" stroke="#00B8FF" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="128" y="106" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#00B8FF">🗝️</text>
+  <text x="128" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Credential</text>
+  <text x="128" y="144" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Management</text>
+  <text x="128" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">AES-256 · Auto rotation</text>
+
+  <!-- 2. MFA -->
+  <rect x="234" y="76" width="175" height="120" rx="12" fill="#0d1f35" stroke="#22c55e" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="322" y="106" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#22c55e">🔒</text>
+  <text x="322" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Multi-Factor</text>
+  <text x="322" y="144" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Authentication</text>
+  <text x="322" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">FIDO2 · TOTP · Context</text>
+
+  <!-- 3. Session Monitoring -->
+  <rect x="428" y="76" width="175" height="120" rx="12" fill="#0d1f35" stroke="#f59e0b" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="516" y="106" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#f59e0b">📹</text>
+  <text x="516" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Session Monitoring</text>
+  <text x="516" y="144" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">&amp; Recording</text>
+  <text x="516" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Tamper-proof · Replayable</text>
+
+  <!-- 4. JIT Access -->
+  <rect x="622" y="76" width="158" height="120" rx="12" fill="#0d1f35" stroke="#6366f1" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="701" y="106" text-anchor="middle" font-family="Arial,sans-serif" font-size="26" fill="#818cf8">⏳</text>
+  <text x="701" y="128" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Just-in-Time</text>
+  <text x="701" y="144" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Access</text>
+  <text x="701" y="170" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Time-bounded · Auto-revoke</text>
+
+  <!-- Row 2: 3 features -->
+  <!-- 5. Automated Access -->
+  <rect x="40" y="212" width="240" height="110" rx="12" fill="#0d1f35" stroke="#a855f7" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="160" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#a855f7">⚙️</text>
+  <text x="160" y="264" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Automated Access Control</text>
+  <text x="160" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Policy-driven provisioning · Auto-revoke · Zero manual intervention</text>
+
+  <!-- 6. Reporting -->
+  <rect x="300" y="212" width="240" height="110" rx="12" fill="#0d1f35" stroke="#ef4444" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="420" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#ef4444">📊</text>
+  <text x="420" y="264" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Reporting &amp; Analytics</text>
+  <text x="420" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Real-time dashboards · Audit-ready · SOC2/PCI/HIPAA</text>
+
+  <!-- 7. Cloud/Hybrid -->
+  <rect x="560" y="212" width="220" height="110" rx="12" fill="#0d1f35" stroke="#14b8a6" stroke-width="1.2" stroke-opacity="0.5"/>
+  <text x="670" y="242" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#14b8a6">☁️</text>
+  <text x="670" y="264" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#e2e8f0">Cloud &amp; Hybrid Support</text>
+  <text x="670" y="290" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">AWS · Azure · GCP · Kubernetes · CI/CD</text>
+
+  <!-- Bottom: Market stats banner -->
+  <rect x="40" y="340" width="740" height="48" rx="10" fill="#071525" stroke="#00B8FF" stroke-width="1" stroke-opacity="0.25"/>
+  <text x="135" y="369" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#94a3b8">Market: <tspan fill="#e2e8f0" font-weight="700">$6.27B</tspan> (2026)</text>
+  <text x="308" y="369" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#94a3b8">Forecast: <tspan fill="#22c55e" font-weight="700">$17.26B</tspan> (2030)</text>
+  <text x="502" y="369" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#94a3b8">CAGR: <tspan fill="#00B8FF" font-weight="700">28.8%</tspan></text>
+  <text x="665" y="369" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#94a3b8">Drivers: <tspan fill="#e2e8f0">Zero Trust · Remote · Compliance</tspan></text>
+
+  <text x="410" y="415" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#475569">best PAM solutions for enterprises 2026 · omnipriv.com</text>
+</svg>

@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 380" width="820" height="380">
+  <defs>
+    <linearGradient id="bg-pk2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#030711"/>
+    </linearGradient>
+    <linearGradient id="pk-green" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#01411C"/>
+      <stop offset="50%" style="stop-color:#ffffff"/>
+      <stop offset="100%" style="stop-color:#01411C"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="380" fill="url(#bg-pk2)" rx="14"/>
+
+  <text x="410" y="36" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff">Privileged Access Management in Pakistan</text>
+  <text x="410" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#64748b">best PAM solutions for enterprises 2026 — OmniPriv &amp; Snskies</text>
+
+  <!-- Left: Sector coverage -->
+  <rect x="40" y="76" width="385" height="265" rx="12" fill="#0d1f35" stroke="#1e3a5f" stroke-width="1"/>
+  <text x="232" y="104" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#e2e8f0">🏢  Key Sectors Adopting PAM in Pakistan</text>
+  <line x1="60" y1="114" x2="405" y2="114" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- Sector chips -->
+  <rect x="60" y="128" width="170" height="38" rx="8" fill="#071e2e" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="145" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">🏦 Banking &amp; Finance</text>
+
+  <rect x="245" y="128" width="160" height="38" rx="8" fill="#071e2e" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="325" y="152" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">📡 Telecom Sector</text>
+
+  <rect x="60" y="178" width="170" height="38" rx="8" fill="#071e2e" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="145" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">🏥 Healthcare</text>
+
+  <rect x="245" y="178" width="160" height="38" rx="8" fill="#071e2e" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="325" y="202" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">🏛️ Government</text>
+
+  <rect x="60" y="228" width="345" height="38" rx="8" fill="#071e2e" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.4"/>
+  <text x="232" y="252" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="600" fill="#e2e8f0">⚡ Critical Infrastructure &amp; Energy</text>
+
+  <!-- PKCERT mandate -->
+  <rect x="60" y="278" width="345" height="48" rx="8" fill="#1a0a0a" stroke="#ef4444" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="232" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#fca5a5">📋 PKCERT Mandate</text>
+  <text x="232" y="315" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Classify privileged accounts · Approval-based controls · Governance enforcement</text>
+
+  <!-- Right: OmniPriv + Snskies solution -->
+  <rect x="445" y="76" width="335" height="265" rx="12" fill="#071525" stroke="#00B8FF" stroke-width="1.5" stroke-opacity="0.5"/>
+  <text x="612" y="104" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#00B8FF">✅  OmniPriv + Snskies</text>
+  <line x1="465" y1="114" x2="760" y2="114" stroke="#1e293b" stroke-width="1"/>
+
+  <rect x="465" y="128" width="295" height="38" rx="8" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="485" y="152" font-family="Arial,sans-serif" font-size="10" fill="#e2e8f0">✓ Zero-trust privileged access enforcement</text>
+
+  <rect x="465" y="178" width="295" height="38" rx="8" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="485" y="202" font-family="Arial,sans-serif" font-size="10" fill="#e2e8f0">✓ Cloud &amp; hybrid deployment flexibility</text>
+
+  <rect x="465" y="228" width="295" height="38" rx="8" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="485" y="252" font-family="Arial,sans-serif" font-size="10" fill="#e2e8f0">✓ PKCERT Essential IAM Controls aligned</text>
+
+  <rect x="465" y="278" width="295" height="48" rx="8" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.8" stroke-opacity="0.3"/>
+  <text x="612" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#00B8FF">📍 Coverage</text>
+  <text x="612" y="315" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Karachi · Lahore · Islamabad — Nationwide deployment &amp; support</text>
+
+  <text x="410" y="365" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#475569">best PAM solutions for enterprises 2026 · omnipriv.com</text>
+</svg>

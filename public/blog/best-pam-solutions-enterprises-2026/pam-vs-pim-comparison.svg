@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" width="820" height="400">
+  <defs>
+    <linearGradient id="bg-comp" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#030711"/>
+    </linearGradient>
+    <linearGradient id="cyan-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00B8FF"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="400" fill="url(#bg-comp)" rx="14"/>
+
+  <text x="410" y="36" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff">PAM vs PIM — Understanding the Difference</text>
+  <text x="410" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#64748b">best PAM solutions for enterprises 2026 · privileged access management comparison</text>
+
+  <!-- PAM card (left) -->
+  <rect x="40" y="76" width="350" height="288" rx="14" fill="#0d1f35" stroke="#00B8FF" stroke-width="1.5" stroke-opacity="0.6"/>
+  <rect x="40" y="76" width="350" height="6" rx="3" fill="url(#cyan-bar)"/>
+  <text x="215" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" fill="#00B8FF">🔐</text>
+  <text x="215" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff">Privileged Access</text>
+  <text x="215" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff">Management (PAM)</text>
+  <line x1="70" y1="175" x2="360" y2="175" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="215" y="196" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">Focus: Managing &amp; monitoring access to systems</text>
+  <text x="215" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">Core: Session control, credential vaulting, monitoring</text>
+  <text x="215" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">Benefit: Prevents unauthorised access to sensitive data</text>
+
+  <rect x="100" y="258" width="230" height="32" rx="8" fill="#00B8FF" fill-opacity="0.1" stroke="#00B8FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="215" y="279" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#00B8FF">Use Case: Securing IT admin sessions &amp; API credentials</text>
+
+  <text x="215" y="320" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Subset of IAM → privileged sessions</text>
+  <text x="215" y="342" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Controls HOW roles interact with sensitive systems</text>
+
+  <!-- PIM card (right) -->
+  <rect x="430" y="76" width="350" height="288" rx="14" fill="#0d1f35" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.6"/>
+  <rect x="430" y="76" width="350" height="6" rx="3" fill="#818cf8"/>
+  <text x="605" y="112" text-anchor="middle" font-family="Arial,sans-serif" font-size="36" fill="#818cf8">🪪</text>
+  <text x="605" y="140" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff">Privileged Identity</text>
+  <text x="605" y="160" text-anchor="middle" font-family="Arial,sans-serif" font-size="16" font-weight="700" fill="#ffffff">Management (PIM)</text>
+  <line x1="460" y1="175" x2="750" y2="175" stroke="#1e3a5f" stroke-width="1"/>
+
+  <text x="605" y="196" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">Focus: Managing privileged user identities &amp; roles</text>
+  <text x="605" y="218" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">Core: Role-based access, time-limited permissions</text>
+  <text x="605" y="240" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">Benefit: Ensures access is granted only when needed</text>
+
+  <rect x="490" y="258" width="230" height="32" rx="8" fill="#818cf8" fill-opacity="0.1" stroke="#818cf8" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="605" y="279" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#818cf8">Use Case: Onboarding, role assignments, approvals</text>
+
+  <text x="605" y="320" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Subset of IAM → privileged identities</text>
+  <text x="605" y="342" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Defines WHO gets what role</text>
+
+  <!-- VS connector -->
+  <rect x="388" y="180" width="44" height="44" rx="22" fill="#1e293b" stroke="#475569" stroke-width="1.5"/>
+  <text x="410" y="199" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#94a3b8">PAM</text>
+  <text x="410" y="212" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#64748b">+ PIM</text>
+
+  <text x="410" y="385" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#475569">best PAM solutions for enterprises 2026 · omnipriv.com</text>
+</svg>
