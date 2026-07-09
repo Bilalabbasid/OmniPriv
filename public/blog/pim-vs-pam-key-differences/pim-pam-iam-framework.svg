@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 370" width="820" height="370">
+  <defs>
+    <linearGradient id="bg-fw" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#030711"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="370" fill="url(#bg-fw)" rx="14"/>
+
+  <text x="410" y="36" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff">PIM + PAM + IAM — Complete Identity Security Framework</text>
+  <text x="410" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#64748b">PIM vs PAM · PAM vs IAM · Zero Trust enterprise security</text>
+
+  <!-- IAM (top, widest) -->
+  <rect x="40" y="80" width="740" height="65" rx="14" fill="#0d1f35" stroke="#f59e0b" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="40" y="80" width="8" height="65" rx="4" fill="#f59e0b"/>
+  <text x="130" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="22" fill="#f59e0b">👥</text>
+  <text x="225" y="103" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="700" fill="#ffffff">IAM — Identity &amp; Access Mgmt</text>
+  <text x="225" y="122" text-anchor="middle" font-family="Arial,sans-serif" font-size="9.5" fill="#94a3b8">Standard user authentication · SSO · MFA · Lifecycle management</text>
+  <text x="570" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Foundation for all identity-based access</text>
+
+  <!-- Arrow IAM → PIM+PAM -->
+  <line x1="410" y1="145" x2="410" y2="162" stroke="#475569" stroke-width="1.5"/>
+  <polygon points="405,157 410,168 415,157" fill="#475569"/>
+
+  <!-- PIM (bottom-left) -->
+  <rect x="40" y="170" width="360" height="155" rx="14" fill="#0d1f35" stroke="#818cf8" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="40" y="170" width="360" height="5" rx="3" fill="#818cf8"/>
+  <text x="220" y="204" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#818cf8">PIM — Privileged Identity Mgmt</text>
+  <line x1="70" y1="216" x2="370" y2="216" stroke="#1e3a5f" stroke-width="1"/>
+
+  <rect x="60" y="228" width="155" height="28" rx="6" fill="#0d1f35" stroke="#818cf8" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="72" y="247" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Just-in-Time access</text>
+
+  <rect x="225" y="228" width="155" height="28" rx="6" fill="#0d1f35" stroke="#818cf8" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="237" y="247" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Role activation</text>
+
+  <rect x="60" y="264" width="155" height="28" rx="6" fill="#0d1f35" stroke="#818cf8" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="72" y="283" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Approval workflows</text>
+
+  <rect x="225" y="264" width="155" height="28" rx="6" fill="#0d1f35" stroke="#818cf8" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="237" y="283" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Time-based permissions</text>
+
+  <text x="220" y="312" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Defines who gets elevated access</text>
+
+  <!-- PAM (bottom-right) -->
+  <rect x="420" y="170" width="360" height="155" rx="14" fill="#0d1f35" stroke="#00B8FF" stroke-width="1.5" stroke-opacity="0.5"/>
+  <rect x="420" y="170" width="360" height="5" rx="3" fill="#00B8FF"/>
+  <text x="600" y="204" text-anchor="middle" font-family="Arial,sans-serif" font-size="14" font-weight="700" fill="#00B8FF">PAM — Privileged Access Mgmt</text>
+  <line x1="450" y1="216" x2="750" y2="216" stroke="#1e3a5f" stroke-width="1"/>
+
+  <rect x="440" y="228" width="155" height="28" rx="6" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="452" y="247" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Credential vaulting</text>
+
+  <rect x="605" y="228" width="155" height="28" rx="6" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="617" y="247" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Session recording</text>
+
+  <rect x="440" y="264" width="155" height="28" rx="6" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="452" y="283" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Auto credential rotation</text>
+
+  <rect x="605" y="264" width="155" height="28" rx="6" fill="#0d1f35" stroke="#00B8FF" stroke-width="0.6" stroke-opacity="0.25"/>
+  <text x="617" y="283" font-family="Arial,sans-serif" font-size="9.5" fill="#e2e8f0">Real-time monitoring</text>
+
+  <text x="600" y="312" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Secures how privileged access is used</text>
+
+  <!-- Footer -->
+  <text x="410" y="354" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#475569">PIM vs PAM · omnipriv.com</text>
+</svg>

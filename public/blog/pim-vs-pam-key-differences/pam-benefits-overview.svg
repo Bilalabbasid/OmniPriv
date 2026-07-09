@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" width="820" height="440">
+  <defs>
+    <linearGradient id="bg-ben" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#030711"/>
+    </linearGradient>
+  </defs>
+  <rect width="820" height="440" fill="url(#bg-ben)" rx="14"/>
+
+  <text x="410" y="36" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="17" font-weight="700" fill="#ffffff">Key Benefits of Privileged Access Management</text>
+  <text x="410" y="56" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#64748b">PIM vs PAM · benefits of privileged access management · enterprise security</text>
+
+  <!-- 8 benefit cards in 4x2 grid -->
+  <!-- Row 1 -->
+  <rect x="40" y="78" width="175" height="110" rx="12" fill="#0d1f35" stroke="#00B8FF" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="128" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#00B8FF">🛡️</text>
+  <text x="128" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Reduced Attack Surface</text>
+  <text x="128" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Least privilege across all tiers</text>
+
+  <rect x="234" y="78" width="175" height="110" rx="12" fill="#0d1f35" stroke="#22c55e" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="322" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#22c55e">🔒</text>
+  <text x="322" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Stronger Credential</text>
+  <text x="322" y="148" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Protection</text>
+  <text x="322" y="172" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Vaulting · Rotation · MFA</text>
+
+  <rect x="428" y="78" width="175" height="110" rx="12" fill="#0d1f35" stroke="#f59e0b" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="516" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#f59e0b">📋</text>
+  <text x="516" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Compliance Reporting</text>
+  <text x="516" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">SOC2 · HIPAA · PCI-DSS</text>
+
+  <rect x="622" y="78" width="158" height="110" rx="12" fill="#0d1f35" stroke="#6366f1" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="701" y="108" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#818cf8">👁️</text>
+  <text x="701" y="130" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Better Visibility</text>
+  <text x="701" y="158" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Session recording &amp; audit</text>
+
+  <!-- Row 2 -->
+  <rect x="40" y="204" width="175" height="110" rx="12" fill="#0d1f35" stroke="#a855f7" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="128" y="234" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#a855f7">⚡</text>
+  <text x="128" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Auto Password Mgmt</text>
+  <text x="128" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Scheduled · Per-use rotation</text>
+
+  <rect x="234" y="204" width="175" height="110" rx="12" fill="#0d1f35" stroke="#ef4444" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="322" y="234" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#ef4444">🔎</text>
+  <text x="322" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Faster Incident</text>
+  <text x="322" y="273" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Investigation</text>
+  <text x="322" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Session replay · Forensics</text>
+
+  <rect x="428" y="204" width="175" height="110" rx="12" fill="#0d1f35" stroke="#14b8a6" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="516" y="234" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#14b8a6">📈</text>
+  <text x="516" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Operational Efficiency</text>
+  <text x="516" y="284" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Automation at scale</text>
+
+  <rect x="622" y="204" width="158" height="110" rx="12" fill="#0d1f35" stroke="#eab308" stroke-width="1" stroke-opacity="0.4"/>
+  <text x="701" y="234" text-anchor="middle" font-family="Arial,sans-serif" font-size="24" fill="#eab308">🛑</text>
+  <text x="701" y="256" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Reduced Insider</text>
+  <text x="701" y="273" text-anchor="middle" font-family="Arial,sans-serif" font-size="10.5" font-weight="700" fill="#e2e8f0">Risk</text>
+  <text x="701" y="298" text-anchor="middle" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">JIT · Monitoring · Alerts</text>
+
+  <!-- Bottom banner -->
+  <rect x="40" y="332" width="740" height="48" rx="10" fill="#071525" stroke="#00B8FF" stroke-width="1" stroke-opacity="0.22"/>
+  <text x="180" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">PIM <tspan fill="#818cf8" font-weight="700">defines who</tspan></text>
+  <text x="410" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">PAM <tspan fill="#00B8FF" font-weight="700">protects how</tspan></text>
+  <text x="620" y="355" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" fill="#94a3b8">Result: <tspan fill="#22c55e" font-weight="700">Enterprise-grade privileged security</tspan></text>
+
+  <text x="410" y="408" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#475569">PIM vs PAM · omnipriv.com</text>
+</svg>
