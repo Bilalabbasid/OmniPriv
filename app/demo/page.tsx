@@ -11,6 +11,7 @@ import {
   EMAILJS_PUBLIC_KEY,
   EMAILJS_SERVICE_ID,
   EMAILJS_DEMO_TEMPLATE_ID,
+  EMAILJS_RECIPIENT,
 } from "@/lib/emailjs";
 
 const companySizes = [
@@ -95,6 +96,7 @@ export default function DemoPage() {
         EMAILJS_SERVICE_ID,
         EMAILJS_DEMO_TEMPLATE_ID,
         {
+          to_email: EMAILJS_RECIPIENT,
           firstName: formData.firstName,
           lastName: formData.lastName,
           email: formData.email,

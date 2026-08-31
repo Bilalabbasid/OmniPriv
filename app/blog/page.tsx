@@ -8,6 +8,7 @@ import {
   EMAILJS_PUBLIC_KEY,
   EMAILJS_SERVICE_ID,
   EMAILJS_NEWSLETTER_TEMPLATE_ID,
+  EMAILJS_RECIPIENT,
 } from "@/lib/emailjs";
 import { posts as blogData } from "@/lib/blog-data";
 
@@ -76,7 +77,10 @@ export default function BlogPage() {
       await emailjs.send(
         EMAILJS_SERVICE_ID,
         EMAILJS_NEWSLETTER_TEMPLATE_ID,
-        { subscriber_email: newsletterEmail },
+        {
+          to_email: EMAILJS_RECIPIENT,
+          subscriber_email: newsletterEmail,
+        },
         EMAILJS_PUBLIC_KEY,
       );
       setNewsletterStatus("success");

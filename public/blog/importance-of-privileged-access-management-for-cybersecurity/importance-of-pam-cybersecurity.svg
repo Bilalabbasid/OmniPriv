@@ -1,0 +1,201 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="820" height="420">
+  <defs>
+    <linearGradient id="bg-grad-1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#030711"/>
+    </linearGradient>
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0e2038"/>
+      <stop offset="100%" style="stop-color:#071322"/>
+    </linearGradient>
+    <linearGradient id="pam-core-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#004b7a"/>
+      <stop offset="100%" style="stop-color:#001e38"/>
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00B8FF"/>
+      <stop offset="100%" style="stop-color:#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="shield-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#00B8FF"/>
+      <stop offset="100%" style="stop-color:#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="420" fill="url(#bg-grad-1)" rx="14"/>
+  <rect x="1" y="1" width="818" height="418" fill="none" stroke="#1e3a5f" stroke-width="1" rx="13"/>
+
+  <!-- Grid lines background pattern -->
+  <g opacity="0.12" stroke="#00B8FF" stroke-width="0.5">
+    <line x1="40" y1="0" x2="40" y2="420"/>
+    <line x1="160" y1="0" x2="160" y2="420"/>
+    <line x1="280" y1="0" x2="280" y2="420"/>
+    <line x1="400" y1="0" x2="400" y2="420"/>
+    <line x1="520" y1="0" x2="520" y2="420"/>
+    <line x1="640" y1="0" x2="640" y2="420"/>
+    <line x1="760" y1="0" x2="760" y2="420"/>
+    <line x1="0" y1="70" x2="820" y2="70"/>
+    <line x1="0" y1="140" x2="820" y2="140"/>
+    <line x1="0" y1="210" x2="820" y2="210"/>
+    <line x1="0" y1="280" x2="820" y2="280"/>
+    <line x1="0" y1="350" x2="820" y2="350"/>
+  </g>
+
+  <!-- Header Section -->
+  <text x="410" y="38" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="0.3">Importance of Privileged Access Management in Cybersecurity</text>
+  <text x="410" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#94a3b8">Zero-Trust Privileged Access Architecture &amp; Threat Defense Model</text>
+
+  <!-- Connection Lines Behind -->
+  <path d="M 230 145 L 290 145 L 290 230 L 310 230" fill="none" stroke="#00B8FF" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+  <path d="M 230 230 L 310 230" fill="none" stroke="#00B8FF" stroke-width="2" opacity="0.9"/>
+  <path d="M 230 315 L 290 315 L 290 230 L 310 230" fill="none" stroke="#00B8FF" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+
+  <path d="M 510 230 L 590 145" fill="none" stroke="#00B8FF" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+  <path d="M 510 230 L 590 230" fill="none" stroke="#00B8FF" stroke-width="2" opacity="0.9"/>
+  <path d="M 510 230 L 590 315" fill="none" stroke="#00B8FF" stroke-width="1.5" stroke-dasharray="4,4" opacity="0.7"/>
+
+  <!-- LEFT COLUMN: Privileged Identities -->
+  <g transform="translate(30, 85)">
+    <rect width="200" height="295" rx="12" fill="url(#card-grad)" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <!-- Title -->
+    <rect x="0" y="0" width="200" height="38" rx="12" fill="#132742"/>
+    <text x="100" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#38bdf8">PRIVILEGED IDENTITIES</text>
+
+    <!-- Item 1 -->
+    <g transform="translate(12, 48)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#0284c7" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">👤</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">IT &amp; Cloud Admins</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Domain &amp; Root Access</text>
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(12, 108)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#6366f1" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">💻</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">DevOps &amp; Engineers</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">CI/CD &amp; Infrastructure</text>
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(12, 168)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#f59e0b" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">🏢</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">Third-Party Vendors</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">External Contractors</text>
+    </g>
+
+    <!-- Item 4 -->
+    <g transform="translate(12, 228)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#10b981" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">🤖</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">Service &amp; API Accounts</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Non-Human Identities</text>
+    </g>
+  </g>
+
+  <!-- CENTER COLUMN: PAM Security Control Plane -->
+  <g transform="translate(310, 80)">
+    <rect width="200" height="305" rx="14" fill="url(#pam-core-grad)" stroke="#00B8FF" stroke-width="1.8" filter="url(#glow)" opacity="0.95"/>
+    
+    <!-- Top badge -->
+    <rect x="25" y="-12" width="150" height="24" rx="12" fill="#00B8FF"/>
+    <text x="100" y="4" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" font-weight="800" fill="#030711" letter-spacing="0.5">OMNIPRIV PAM PLATFORM</text>
+
+    <!-- Shield Icon -->
+    <g transform="translate(85, 20)">
+      <circle cx="15" cy="15" r="18" fill="#00B8FF" opacity="0.2"/>
+      <text x="15" y="22" text-anchor="middle" font-size="20">🛡️</text>
+    </g>
+
+    <!-- Center Control List -->
+    <g transform="translate(14, 62)">
+      <!-- Feature 1 -->
+      <rect y="0" width="172" height="38" rx="6" fill="#061a30" stroke="#0284c7" stroke-width="0.8"/>
+      <text x="10" y="16" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#38bdf8">🔐 Credential Vaulting</text>
+      <text x="10" y="30" font-family="Arial,sans-serif" font-size="8.5" fill="#cbd5e1">Auto-rotation &amp; secret isolation</text>
+
+      <!-- Feature 2 -->
+      <rect y="44" width="172" height="38" rx="6" fill="#061a30" stroke="#0284c7" stroke-width="0.8"/>
+      <text x="10" y="60" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#38bdf8">⏱️ Just-In-Time (JIT) Access</text>
+      <text x="10" y="74" font-family="Arial,sans-serif" font-size="8.5" fill="#cbd5e1">Zero standing privileges &amp; approval</text>
+
+      <!-- Feature 3 -->
+      <rect y="88" width="172" height="38" rx="6" fill="#061a30" stroke="#0284c7" stroke-width="0.8"/>
+      <text x="10" y="104" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#38bdf8">📹 Session Recording &amp; Proxy</text>
+      <text x="10" y="118" font-family="Arial,sans-serif" font-size="8.5" fill="#cbd5e1">Live monitoring &amp; command filter</text>
+
+      <!-- Feature 4 -->
+      <rect y="132" width="172" height="38" rx="6" fill="#061a30" stroke="#0284c7" stroke-width="0.8"/>
+      <text x="10" y="148" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#38bdf8">🔑 Multi-Factor Authentication</text>
+      <text x="10" y="162" font-family="Arial,sans-serif" font-size="8.5" fill="#cbd5e1">Enforced MFA on elevated tasks</text>
+
+      <!-- Feature 5 -->
+      <rect y="176" width="172" height="38" rx="6" fill="#061a30" stroke="#0284c7" stroke-width="0.8"/>
+      <text x="10" y="192" font-family="Arial,sans-serif" font-size="10" font-weight="700" fill="#38bdf8">📋 Compliance &amp; Audit Logs</text>
+      <text x="10" y="206" font-family="Arial,sans-serif" font-size="8.5" fill="#cbd5e1">ISO 27001, SOC 2 &amp; PCI-DSS</text>
+    </g>
+
+    <!-- Bottom Status -->
+    <rect x="14" y="278" width="172" height="18" rx="4" fill="#00B8FF" opacity="0.15"/>
+    <text x="100" y="291" text-anchor="middle" font-family="Arial,sans-serif" font-size="8.5" font-weight="700" fill="#00B8FF">ZERO TRUST CONTINUOUS VERIFICATION</text>
+  </g>
+
+  <!-- RIGHT COLUMN: Protected Digital Assets -->
+  <g transform="translate(590, 85)">
+    <rect width="200" height="295" rx="12" fill="url(#card-grad)" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <!-- Title -->
+    <rect x="0" y="0" width="200" height="38" rx="12" fill="#132742"/>
+    <text x="100" y="24" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#10b981">PROTECTED ASSETS</text>
+
+    <!-- Item 1 -->
+    <g transform="translate(12, 48)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#0284c7" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">☁️</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">Cloud Infrastructure</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">AWS, Azure, GCP, K8s</text>
+    </g>
+
+    <!-- Item 2 -->
+    <g transform="translate(12, 108)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#6366f1" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">🗄️</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">Critical Databases</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">SQL, Oracle, MongoDB</text>
+    </g>
+
+    <!-- Item 3 -->
+    <g transform="translate(12, 168)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#10b981" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">🖥️</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">Core Servers &amp; Routers</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">Linux, Windows, Network</text>
+    </g>
+
+    <!-- Item 4 -->
+    <g transform="translate(12, 228)">
+      <rect width="176" height="52" rx="8" fill="#09182b" stroke="#1d4068" stroke-width="1"/>
+      <circle cx="26" cy="26" r="14" fill="#ec4899" opacity="0.3"/>
+      <text x="26" y="31" text-anchor="middle" font-size="14">💳</text>
+      <text x="50" y="22" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="#f1f5f9">Financial &amp; Core Data</text>
+      <text x="50" y="38" font-family="Arial,sans-serif" font-size="9" fill="#94a3b8">ERP, CRM &amp; Sensitive IP</text>
+    </g>
+  </g>
+
+  <!-- Bottom Indicator -->
+  <text x="410" y="405" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">OmniPriv PAM — Centralized Control, Session Isolation, and Tamper-Proof Audit Defense</text>
+</svg>

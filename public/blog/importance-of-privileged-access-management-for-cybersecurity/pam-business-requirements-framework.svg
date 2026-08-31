@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="820" height="420">
+  <defs>
+    <linearGradient id="bg-grad-3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0A1628"/>
+      <stop offset="100%" style="stop-color:#030711"/>
+    </linearGradient>
+    <linearGradient id="pillar-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d233e"/>
+      <stop offset="100%" style="stop-color:#071426"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="820" height="420" fill="url(#bg-grad-3)" rx="14"/>
+  <rect x="1" y="1" width="818" height="418" fill="none" stroke="#1e3a5f" stroke-width="1" rx="13"/>
+
+  <!-- Title & Subtitle -->
+  <text x="410" y="38" text-anchor="middle" font-family="-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif" font-size="18" font-weight="800" fill="#ffffff" letter-spacing="0.3">Business Requirements for Privileged Access Management</text>
+  <text x="410" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" fill="#94a3b8">Essential Pillars for Implementing a Scalable, Zero-Trust PAM Program</text>
+
+  <!-- 4 Core Pillars Pipeline -->
+  
+  <!-- Pillar 1: Identity & Asset Discovery -->
+  <g transform="translate(30, 80)">
+    <rect width="175" height="295" rx="10" fill="url(#pillar-grad)" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <!-- Step Badge -->
+    <rect x="12" y="12" width="28" height="28" rx="14" fill="#00B8FF" fill-opacity="0.2" stroke="#00B8FF" stroke-width="1"/>
+    <text x="26" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="800" fill="#00B8FF">01</text>
+    
+    <text x="48" y="24" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Discovery &amp;</text>
+    <text x="48" y="37" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#38bdf8">Visibility</text>
+
+    <line x1="12" y1="52" x2="163" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+
+    <!-- Requirements list -->
+    <g transform="translate(12, 64)">
+      <text font-family="Arial,sans-serif" font-size="10.5" fill="#cbd5e1" leading="18">
+        <tspan x="0" y="0" font-weight="700" fill="#38bdf8">Key Objectives:</tspan>
+        <tspan x="0" y="18">• Map all admin accounts</tspan>
+        <tspan x="0" y="36">• Identify shadow &amp; service IDs</tspan>
+        <tspan x="0" y="54">• Catalog multi-cloud roles</tspan>
+        <tspan x="0" y="72">• Detect dormant credentials</tspan>
+        <tspan x="0" y="90">• Continuous asset scanning</tspan>
+        <tspan x="0" y="120" font-weight="700" fill="#94a3b8">Business Outcome:</tspan>
+        <tspan x="0" y="138" fill="#a5f3fc">• 100% visibility of privileged</tspan>
+        <tspan x="0" y="154" fill="#a5f3fc">  attack surface &amp; users</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Pillar 2: Credential & Vault Security -->
+  <g transform="translate(225, 80)">
+    <rect width="175" height="295" rx="10" fill="url(#pillar-grad)" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <!-- Step Badge -->
+    <rect x="12" y="12" width="28" height="28" rx="14" fill="#6366f1" fill-opacity="0.2" stroke="#6366f1" stroke-width="1"/>
+    <text x="26" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="800" fill="#818cf8">02</text>
+    
+    <text x="48" y="24" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Credential</text>
+    <text x="48" y="37" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#a5b4fc">Governance</text>
+
+    <line x1="12" y1="52" x2="163" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+
+    <!-- Requirements list -->
+    <g transform="translate(12, 64)">
+      <text font-family="Arial,sans-serif" font-size="10.5" fill="#cbd5e1" leading="18">
+        <tspan x="0" y="0" font-weight="700" fill="#a5b4fc">Key Objectives:</tspan>
+        <tspan x="0" y="18">• Enterprise secret vaulting</tspan>
+        <tspan x="0" y="36">• Automated password rotation</tspan>
+        <tspan x="0" y="54">• SSH key &amp; API token control</tspan>
+        <tspan x="0" y="72">• Mandatory MFA triggers</tspan>
+        <tspan x="0" y="90">• Zero hardcoded passwords</tspan>
+        <tspan x="0" y="120" font-weight="700" fill="#94a3b8">Business Outcome:</tspan>
+        <tspan x="0" y="138" fill="#c7d2fe">• Zero credential reuse &amp;</tspan>
+        <tspan x="0" y="154" fill="#c7d2fe">  elimination of weak keys</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Pillar 3: Least Privilege & Session Control -->
+  <g transform="translate(420, 80)">
+    <rect width="175" height="295" rx="10" fill="url(#pillar-grad)" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <!-- Step Badge -->
+    <rect x="12" y="12" width="28" height="28" rx="14" fill="#10b981" fill-opacity="0.2" stroke="#10b981" stroke-width="1"/>
+    <text x="26" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="800" fill="#34d399">03</text>
+    
+    <text x="48" y="24" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Least Privilege &amp;</text>
+    <text x="48" y="37" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#6ee7b7">Session Proxy</text>
+
+    <line x1="12" y1="52" x2="163" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+
+    <!-- Requirements list -->
+    <g transform="translate(12, 64)">
+      <text font-family="Arial,sans-serif" font-size="10.5" fill="#cbd5e1" leading="18">
+        <tspan x="0" y="0" font-weight="700" fill="#6ee7b7">Key Objectives:</tspan>
+        <tspan x="0" y="18">• JIT elevation on demand</tspan>
+        <tspan x="0" y="36">• Multi-level approval flow</tspan>
+        <tspan x="0" y="54">• Proxied session isolation</tspan>
+        <tspan x="0" y="72">• Command blocking &amp; filter</tspan>
+        <tspan x="0" y="90">• Live session termination</tspan>
+        <tspan x="0" y="120" font-weight="700" fill="#94a3b8">Business Outcome:</tspan>
+        <tspan x="0" y="138" fill="#a7f3d0">• Zero standing privilege &amp;</tspan>
+        <tspan x="0" y="154" fill="#a7f3d0">  containment of blast radius</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Pillar 4: Integration & Scalable Compliance -->
+  <g transform="translate(615, 80)">
+    <rect width="175" height="295" rx="10" fill="url(#pillar-grad)" stroke="#1e3a5f" stroke-width="1"/>
+    
+    <!-- Step Badge -->
+    <rect x="12" y="12" width="28" height="28" rx="14" fill="#f59e0b" fill-opacity="0.2" stroke="#f59e0b" stroke-width="1"/>
+    <text x="26" y="31" text-anchor="middle" font-family="Arial,sans-serif" font-size="13" font-weight="800" fill="#fbbf24">04</text>
+    
+    <text x="48" y="24" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#ffffff">Scalability &amp;</text>
+    <text x="48" y="37" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="#fde68a">Compliance</text>
+
+    <line x1="12" y1="52" x2="163" y2="52" stroke="#1e3a5f" stroke-width="1"/>
+
+    <!-- Requirements list -->
+    <g transform="translate(12, 64)">
+      <text font-family="Arial,sans-serif" font-size="10.5" fill="#cbd5e1" leading="18">
+        <tspan x="0" y="0" font-weight="700" fill="#fde68a">Key Objectives:</tspan>
+        <tspan x="0" y="18">• SIEM &amp; ITSM integration</tspan>
+        <tspan x="0" y="36">• Hybrid &amp; multi-cloud scale</tspan>
+        <tspan x="0" y="54">• Tamper-proof audit logs</tspan>
+        <tspan x="0" y="72">• Automated compliance export</tspan>
+        <tspan x="0" y="90">• High availability clustering</tspan>
+        <tspan x="0" y="120" font-weight="700" fill="#94a3b8">Business Outcome:</tspan>
+        <tspan x="0" y="138" fill="#fef3c7">• Frictionless audit readiness</tspan>
+        <tspan x="0" y="154" fill="#fef3c7">  &amp; operational continuity</tspan>
+      </text>
+    </g>
+  </g>
+
+  <!-- Footer -->
+  <text x="410" y="407" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" fill="#64748b">Strategic PAM Alignment: Combining Practical Usability with Enterprise-Grade Zero Trust Security</text>
+</svg>
